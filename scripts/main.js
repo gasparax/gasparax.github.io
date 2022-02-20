@@ -37,11 +37,11 @@ dimensions = {
         height: 800
     }
 }
-var marginLineChart = { top: 50, right: 30, bottom: 30, left: 40 };
+var marginLineChart = { top: 50, right: 30, bottom: 30, left: 50 };
 var widthLineChart = 600 - marginLineChart.left - marginLineChart.right;
 var heightLineChart = 400 - marginLineChart.top - marginLineChart.bottom;
 
-var marginBarChart = { top: 50, right: 30, bottom: 30, left: 40 };
+var marginBarChart = { top: 50, right: 30, bottom: 30, left: 50 };
 var widthBarChart = 600 - marginBarChart.left - marginBarChart.right;
 var heightBarChart = 400 - marginBarChart.top - marginBarChart.bottom;
 
@@ -93,7 +93,6 @@ async function scrollVis() {
             svg = d3.select(this)
                 .append('svg')
                 .attr('id', 'visSvgMain');
-            console.log(d3.select('#visSvgMain').node().getBBox())
             visGroup = svg.append('g')
                 .attr('id', 'visGroupMain');
 
@@ -120,10 +119,27 @@ async function scrollVis() {
         lineChart.append("g")
             .attr("transform", "translate(0," + heightLineChart + ")")
             .attr("id", "lineChartXAxis")
+        //Aggiugo la label all'asse x
+        d3.select('#lineChartXAxis')
+            .append('text')
+            .text('Years')
+            .attr("text-anchor", "middle")
+            .style('font-size', heightLineChart * 0.04)
+            .attr('x', widthLineChart / 2)
+            .attr('y', marginBarChart.bottom + 5)
+            .attr('fill', 'black');
 
         // Initialize lineChart Y axis
         lineChart.append("g")
             .attr("id", "lineChartYAxis")
+        //Aggiugo la label all'asse y
+        d3.select('#lineChartYAxis').append('text')
+            .attr('x', - (heightLineChart / 2))
+            .attr('y', - marginBarChart.left + 15)
+            .text('Videogames Sold (in millions $)')
+            .attr("text-anchor", "middle")
+            .style('font-size', heightLineChart * 0.04)
+            .attr('fill', 'black').style('transform', 'rotate(270deg)');
 
         //bar chart
         var barChart = visGroup.append('g')
@@ -133,14 +149,32 @@ async function scrollVis() {
             .attr('opacity', 0);
 
         // Initialise barChart X axis:
+
         barChart.append('g')
             .style('transform', `translateY(${heightBarChart}px)`)
-            .attr("transform", "translate(0," + heightBarChart + ")")
-            .attr("id", "barChartXAxis")
+            .attr("id", "barChartXAxis");
+        //Aggiugo la label all'asse x
+        d3.select('#barChartXAxis')
+            .append('text')
+            .text('Platforms')
+            .attr("text-anchor", "middle")
+            .style('font-size', heightBarChart * 0.04)
+            .attr('x', widthBarChart / 2)
+            .attr('y', marginBarChart.bottom + 5)
+            .attr('fill', 'black');
 
-        // Initialize barChart Y axis
+        // Initialize barChart Y axis    
         barChart.append("g")
-            .attr("id", "barChartYAxis")
+            .attr("id", "barChartYAxis");
+
+        //Aggiugo la label all'asse y
+        d3.select('#barChartYAxis').append('text')
+            .attr('x', - (heightBarChart / 2))
+            .attr('y', - marginBarChart.left + 15)
+            .text('Videogames Produced')
+            .attr("text-anchor", "middle")
+            .style('font-size', heightBarChart * 0.04)
+            .attr('fill', 'black').style('transform', 'rotate(270deg)');
 
         //pie chart
         var pieChart = visGroup.append('g')
@@ -380,18 +414,18 @@ async function setupScrollSection(filename, scrollSection) {
         .join('text')
         .call(
             text => text.append('tspan')
-            .text(d => genreAccessor(d))
+                .text(d => genreAccessor(d))
                 .attr('x', dimensions.width / 2)
-                .attr('y', (d, i) => 
+                .attr('y', (d, i) =>
                     (bubblesDistance * ((i % dataset.length))) - labelSpace - radiusScaler(qtAccessor(d)))
                 .attr("text-anchor", "middle")
-                .style('font-size', fontSize +10)
+                .style('font-size', fontSize + 10)
         )
         .call(
             text => text.append('tspan')
-            .text(d => qtAccessor(d) + ' - Produced Games')
+                .text(d => qtAccessor(d) + ' - Produced Games')
                 .attr('x', dimensions.width / 2)
-                .attr('y', (d, i) => 
+                .attr('y', (d, i) =>
                     (bubblesDistance * ((i % dataset.length))) + labelSpace + 10 + radiusScaler(qtAccessor(d)))
                 .attr("text-anchor", "middle")
                 .style('font-size', fontSize)

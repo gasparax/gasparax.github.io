@@ -1,4 +1,4 @@
-function histChart(selection, data,widthBarChart, heightBarChart, fillColor) {
+function histChart(selection, data, widthBarChart, heightBarChart, fillColor) {
     //Creaiamo una sorta di buffer delle transazioni
     //che vengono fatte da d3.
     //ad ogni transazione è associato un ID che serve a d3 per
@@ -8,7 +8,7 @@ function histChart(selection, data,widthBarChart, heightBarChart, fillColor) {
 
     const xAccessor = (d) => d.platform;
     const yAccessor = (d) => d.qta;
-    
+
     var xScale = d3.scaleBand()
         .range([0, widthBarChart])
         .domain(data.map(d => xAccessor(d)))
@@ -43,5 +43,5 @@ function histChart(selection, data,widthBarChart, heightBarChart, fillColor) {
         .attr('fill', fillColor)
         //x0 è un nuovo attributo che crea D3 per i bin e indica il lower bound del bin
         .attr('x', d => xScale(xAccessor(d)))
-        .attr('y', d => yScale(yAccessor(d)))
+        .attr('y', d => yScale(yAccessor(d)));
 }
