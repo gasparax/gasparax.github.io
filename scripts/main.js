@@ -396,14 +396,14 @@ async function setupScrollSection(filename, scrollSection) {
         .attr('id', 'svgSections')
         .attr('height', dimensions.height + dimensions.maxRadius);
 
-    var labelSpace = 20;
+    var labelSpace = 30;
     var topPadding = (dimensions.maxRadius / 2) + labelSpace;
 
     var ctr = svgSections.append('g')
         .attr('id', 'grpSections')
         .attr(
             'transform',
-            `translate(${dimensions.margins.left}, ${topPadding})`
+            `translate(${dimensions.margins.left}, ${topPadding + 50})`
         );
 
     var bubble = ctr.selectAll('circle')

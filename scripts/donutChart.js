@@ -1,5 +1,5 @@
 function donutChart(selection, data, widthDonutChart, heightDonutChart, genrePalette) {// set the dimensions and margins of the graph
-  
+
   margin = 40;
 
   // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
@@ -17,7 +17,7 @@ function donutChart(selection, data, widthDonutChart, heightDonutChart, genrePal
   // Compute the position of each group on the pie:
   const pie = d3.pie()
     .value(d => d.sales)
-    .sort(null) // Do not sort group by size
+    .sort(null);
   const data_ready = pie(data)
 
   // The arc generator
@@ -29,6 +29,11 @@ function donutChart(selection, data, widthDonutChart, heightDonutChart, genrePal
   const outerArc = d3.arc()
     .innerRadius(radius * 0.9)
     .outerRadius(radius * 0.9)
+
+  let angleInterpolation = d3.interpolate(pie.startAngle()(), pie.endAngle()());
+
+  let innerRadiusInterpolation = d3.interpolate(0, 0);
+  let outerRadiusInterpolation = d3.interpolate(0, radius);
 
   // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
   selection
@@ -58,12 +63,25 @@ function donutChart(selection, data, widthDonutChart, heightDonutChart, genrePal
       return [posA, posB, posC]
     })
 
+  const fontSize = 23;
+
   // Add the polylines between chart and labels:
   selection
     .selectAll('allLabels')
     .data(data_ready)
     .join('text')
-    .text(d => genreAccessor(d.data))
+    .call(
+      text => text.append('tspan')
+        .text(d => genreAccessor(d.data) + ' ')
+        .style('font-size', fontSize)
+    )
+    .call(
+      text => text.append('tspan')
+        .text(d => salesAccessor(d.data) + ' Mln $')
+        .style('font-weight', 'bold')
+        .style('font-size', fontSize)
+    )
+    // .text(d => genreAccessor(d.data) + ' ' +  + ' Mln')
     .attr('transform', function (d) {
       const pos = outerArc.centroid(d);
       const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
