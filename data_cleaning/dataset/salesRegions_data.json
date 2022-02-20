@@ -1,0 +1,206 @@
+[
+    {
+        "genre": "Action",
+        "regions": [
+            {
+                "region": "NA",
+                "sales": 877.83
+            },
+            {
+                "region": "EU",
+                "sales": 525.0
+            },
+            {
+                "region": "JP",
+                "sales": 159.94
+            }
+        ]
+    },
+    {
+        "genre": "Adventure",
+        "regions": [
+            {
+                "region": "NA",
+                "sales": 105.8
+            },
+            {
+                "region": "EU",
+                "sales": 64.13
+            },
+            {
+                "region": "JP",
+                "sales": 52.07
+            }
+        ]
+    },
+    {
+        "genre": "Fighting",
+        "regions": [
+            {
+                "region": "NA",
+                "sales": 223.59
+            },
+            {
+                "region": "EU",
+                "sales": 101.32
+            },
+            {
+                "region": "JP",
+                "sales": 87.35
+            }
+        ]
+    },
+    {
+        "genre": "Misc",
+        "regions": [
+            {
+                "region": "NA",
+                "sales": 410.24
+            },
+            {
+                "region": "EU",
+                "sales": 215.98
+            },
+            {
+                "region": "JP",
+                "sales": 107.76
+            }
+        ]
+    },
+    {
+        "genre": "Platform",
+        "regions": [
+            {
+                "region": "NA",
+                "sales": 447.05
+            },
+            {
+                "region": "EU",
+                "sales": 201.63
+            },
+            {
+                "region": "JP",
+                "sales": 130.77
+            }
+        ]
+    },
+    {
+        "genre": "Puzzle",
+        "regions": [
+            {
+                "region": "NA",
+                "sales": 123.78
+            },
+            {
+                "region": "EU",
+                "sales": 50.78
+            },
+            {
+                "region": "JP",
+                "sales": 57.31
+            }
+        ]
+    },
+    {
+        "genre": "Racing",
+        "regions": [
+            {
+                "region": "NA",
+                "sales": 359.42
+            },
+            {
+                "region": "EU",
+                "sales": 238.39
+            },
+            {
+                "region": "JP",
+                "sales": 56.69
+            }
+        ]
+    },
+    {
+        "genre": "Role-Playing",
+        "regions": [
+            {
+                "region": "NA",
+                "sales": 327.28
+            },
+            {
+                "region": "EU",
+                "sales": 188.06
+            },
+            {
+                "region": "JP",
+                "sales": 352.27
+            }
+        ]
+    },
+    {
+        "genre": "Shooter",
+        "regions": [
+            {
+                "region": "NA",
+                "sales": 582.6
+            },
+            {
+                "region": "EU",
+                "sales": 313.27
+            },
+            {
+                "region": "JP",
+                "sales": 38.28
+            }
+        ]
+    },
+    {
+        "genre": "Simulation",
+        "regions": [
+            {
+                "region": "NA",
+                "sales": 183.04
+            },
+            {
+                "region": "EU",
+                "sales": 113.38
+            },
+            {
+                "region": "JP",
+                "sales": 63.7
+            }
+        ]
+    },
+    {
+        "genre": "Sports",
+        "regions": [
+            {
+                "region": "NA",
+                "sales": 683.35
+            },
+            {
+                "region": "EU",
+                "sales": 376.85
+            },
+            {
+                "region": "JP",
+                "sales": 135.37
+            }
+        ]
+    },
+    {
+        "genre": "Strategy",
+        "regions": [
+            {
+                "region": "NA",
+                "sales": 68.7
+            },
+            {
+                "region": "EU",
+                "sales": 45.34
+            },
+            {
+                "region": "JP",
+                "sales": 49.46
+            }
+        ]
+    }
+]

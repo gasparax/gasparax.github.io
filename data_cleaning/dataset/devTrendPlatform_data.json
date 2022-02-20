@@ -1,0 +1,734 @@
+[
+    {
+        "genre": "Action",
+        "platformProduction": [
+            {
+                "platform": "3DS",
+                "qta": 182
+            },
+            {
+                "platform": "DS",
+                "qta": 343
+            },
+            {
+                "platform": "GBA",
+                "qta": 167
+            },
+            {
+                "platform": "GC",
+                "qta": 101
+            },
+            {
+                "platform": "PC",
+                "qta": 165
+            },
+            {
+                "platform": "PS",
+                "qta": 157
+            },
+            {
+                "platform": "PS2",
+                "qta": 348
+            },
+            {
+                "platform": "PS3",
+                "qta": 380
+            },
+            {
+                "platform": "PS4",
+                "qta": 122
+            },
+            {
+                "platform": "PSP",
+                "qta": 222
+            },
+            {
+                "platform": "PSV",
+                "qta": 141
+            },
+            {
+                "platform": "Wii",
+                "qta": 238
+            },
+            {
+                "platform": "X360",
+                "qta": 324
+            },
+            {
+                "platform": "XB",
+                "qta": 155
+            },
+            {
+                "platform": "XOne",
+                "qta": 68
+            },
+            {
+                "platform": "Misc",
+                "qta": 202
+            }
+        ]
+    },
+    {
+        "genre": "Adventure",
+        "platformProduction": [
+            {
+                "platform": "3DS",
+                "qta": 37
+            },
+            {
+                "platform": "DS",
+                "qta": 240
+            },
+            {
+                "platform": "GBA",
+                "qta": 38
+            },
+            {
+                "platform": "PC",
+                "qta": 65
+            },
+            {
+                "platform": "PS",
+                "qta": 69
+            },
+            {
+                "platform": "PS2",
+                "qta": 196
+            },
+            {
+                "platform": "PS3",
+                "qta": 74
+            },
+            {
+                "platform": "PSP",
+                "qta": 213
+            },
+            {
+                "platform": "PSV",
+                "qta": 86
+            },
+            {
+                "platform": "SAT",
+                "qta": 26
+            },
+            {
+                "platform": "Wii",
+                "qta": 84
+            },
+            {
+                "platform": "X360",
+                "qta": 47
+            },
+            {
+                "platform": "XB",
+                "qta": 26
+            },
+            {
+                "platform": "Misc",
+                "qta": 85
+            }
+        ]
+    },
+    {
+        "genre": "Fighting",
+        "platformProduction": [
+            {
+                "platform": "DS",
+                "qta": 36
+            },
+            {
+                "platform": "GBA",
+                "qta": 23
+            },
+            {
+                "platform": "GC",
+                "qta": 42
+            },
+            {
+                "platform": "N64",
+                "qta": 29
+            },
+            {
+                "platform": "PS",
+                "qta": 108
+            },
+            {
+                "platform": "PS2",
+                "qta": 150
+            },
+            {
+                "platform": "PS3",
+                "qta": 76
+            },
+            {
+                "platform": "PS4",
+                "qta": 17
+            },
+            {
+                "platform": "PSP",
+                "qta": 74
+            },
+            {
+                "platform": "SAT",
+                "qta": 31
+            },
+            {
+                "platform": "SNES",
+                "qta": 25
+            },
+            {
+                "platform": "Wii",
+                "qta": 42
+            },
+            {
+                "platform": "X360",
+                "qta": 65
+            },
+            {
+                "platform": "XB",
+                "qta": 48
+            },
+            {
+                "platform": "Misc",
+                "qta": 82
+            }
+        ]
+    },
+    {
+        "genre": "Misc",
+        "platformProduction": [
+            {
+                "platform": "3DS",
+                "qta": 53
+            },
+            {
+                "platform": "DS",
+                "qta": 393
+            },
+            {
+                "platform": "GBA",
+                "qta": 110
+            },
+            {
+                "platform": "GC",
+                "qta": 36
+            },
+            {
+                "platform": "PS",
+                "qta": 76
+            },
+            {
+                "platform": "PS2",
+                "qta": 222
+            },
+            {
+                "platform": "PS3",
+                "qta": 124
+            },
+            {
+                "platform": "PSP",
+                "qta": 106
+            },
+            {
+                "platform": "Wii",
+                "qta": 280
+            },
+            {
+                "platform": "X360",
+                "qta": 126
+            },
+            {
+                "platform": "XB",
+                "qta": 46
+            },
+            {
+                "platform": "Misc",
+                "qta": 167
+            }
+        ]
+    },
+    {
+        "genre": "Platform",
+        "platformProduction": [
+            {
+                "platform": "3DS",
+                "qta": 28
+            },
+            {
+                "platform": "DS",
+                "qta": 92
+            },
+            {
+                "platform": "GB",
+                "qta": 19
+            },
+            {
+                "platform": "GBA",
+                "qta": 142
+            },
+            {
+                "platform": "GC",
+                "qta": 73
+            },
+            {
+                "platform": "N64",
+                "qta": 30
+            },
+            {
+                "platform": "NES",
+                "qta": 28
+            },
+            {
+                "platform": "PS",
+                "qta": 64
+            },
+            {
+                "platform": "PS2",
+                "qta": 103
+            },
+            {
+                "platform": "PS3",
+                "qta": 37
+            },
+            {
+                "platform": "PSP",
+                "qta": 36
+            },
+            {
+                "platform": "SNES",
+                "qta": 26
+            },
+            {
+                "platform": "Wii",
+                "qta": 58
+            },
+            {
+                "platform": "X360",
+                "qta": 24
+            },
+            {
+                "platform": "XB",
+                "qta": 49
+            },
+            {
+                "platform": "Misc",
+                "qta": 77
+            }
+        ]
+    },
+    {
+        "genre": "Puzzle",
+        "platformProduction": [
+            {
+                "platform": "3DS",
+                "qta": 20
+            },
+            {
+                "platform": "DS",
+                "qta": 238
+            },
+            {
+                "platform": "GB",
+                "qta": 15
+            },
+            {
+                "platform": "GBA",
+                "qta": 41
+            },
+            {
+                "platform": "GC",
+                "qta": 13
+            },
+            {
+                "platform": "N64",
+                "qta": 12
+            },
+            {
+                "platform": "NES",
+                "qta": 14
+            },
+            {
+                "platform": "PC",
+                "qta": 25
+            },
+            {
+                "platform": "PS",
+                "qta": 32
+            },
+            {
+                "platform": "PS2",
+                "qta": 18
+            },
+            {
+                "platform": "PSP",
+                "qta": 44
+            },
+            {
+                "platform": "SNES",
+                "qta": 13
+            },
+            {
+                "platform": "Wii",
+                "qta": 55
+            },
+            {
+                "platform": "Misc",
+                "qta": 42
+            }
+        ]
+    },
+    {
+        "genre": "Racing",
+        "platformProduction": [
+            {
+                "platform": "DS",
+                "qta": 67
+            },
+            {
+                "platform": "GBA",
+                "qta": 64
+            },
+            {
+                "platform": "GC",
+                "qta": 63
+            },
+            {
+                "platform": "N64",
+                "qta": 57
+            },
+            {
+                "platform": "PC",
+                "qta": 60
+            },
+            {
+                "platform": "PS",
+                "qta": 145
+            },
+            {
+                "platform": "PS2",
+                "qta": 216
+            },
+            {
+                "platform": "PS3",
+                "qta": 92
+            },
+            {
+                "platform": "PSP",
+                "qta": 65
+            },
+            {
+                "platform": "Wii",
+                "qta": 94
+            },
+            {
+                "platform": "X360",
+                "qta": 105
+            },
+            {
+                "platform": "XB",
+                "qta": 123
+            },
+            {
+                "platform": "Misc",
+                "qta": 98
+            }
+        ]
+    },
+    {
+        "genre": "Role-Playing",
+        "platformProduction": [
+            {
+                "platform": "3DS",
+                "qta": 86
+            },
+            {
+                "platform": "DS",
+                "qta": 200
+            },
+            {
+                "platform": "GBA",
+                "qta": 73
+            },
+            {
+                "platform": "PC",
+                "qta": 104
+            },
+            {
+                "platform": "PS",
+                "qta": 97
+            },
+            {
+                "platform": "PS2",
+                "qta": 187
+            },
+            {
+                "platform": "PS3",
+                "qta": 119
+            },
+            {
+                "platform": "PS4",
+                "qta": 46
+            },
+            {
+                "platform": "PSP",
+                "qta": 192
+            },
+            {
+                "platform": "PSV",
+                "qta": 82
+            },
+            {
+                "platform": "SNES",
+                "qta": 50
+            },
+            {
+                "platform": "Wii",
+                "qta": 35
+            },
+            {
+                "platform": "X360",
+                "qta": 76
+            },
+            {
+                "platform": "Misc",
+                "qta": 139
+            }
+        ]
+    },
+    {
+        "genre": "Shooter",
+        "platformProduction": [
+            {
+                "platform": "DS",
+                "qta": 42
+            },
+            {
+                "platform": "GBA",
+                "qta": 40
+            },
+            {
+                "platform": "GC",
+                "qta": 48
+            },
+            {
+                "platform": "PC",
+                "qta": 148
+            },
+            {
+                "platform": "PS",
+                "qta": 96
+            },
+            {
+                "platform": "PS2",
+                "qta": 160
+            },
+            {
+                "platform": "PS3",
+                "qta": 156
+            },
+            {
+                "platform": "PS4",
+                "qta": 34
+            },
+            {
+                "platform": "PSP",
+                "qta": 37
+            },
+            {
+                "platform": "Wii",
+                "qta": 66
+            },
+            {
+                "platform": "X360",
+                "qta": 203
+            },
+            {
+                "platform": "XB",
+                "qta": 132
+            },
+            {
+                "platform": "XOne",
+                "qta": 33
+            },
+            {
+                "platform": "Misc",
+                "qta": 115
+            }
+        ]
+    },
+    {
+        "genre": "Simulation",
+        "platformProduction": [
+            {
+                "platform": "3DS",
+                "qta": 30
+            },
+            {
+                "platform": "DS",
+                "qta": 284
+            },
+            {
+                "platform": "GBA",
+                "qta": 18
+            },
+            {
+                "platform": "PC",
+                "qta": 115
+            },
+            {
+                "platform": "PS",
+                "qta": 60
+            },
+            {
+                "platform": "PS2",
+                "qta": 90
+            },
+            {
+                "platform": "PS3",
+                "qta": 31
+            },
+            {
+                "platform": "PSP",
+                "qta": 29
+            },
+            {
+                "platform": "Wii",
+                "qta": 87
+            },
+            {
+                "platform": "X360",
+                "qta": 40
+            },
+            {
+                "platform": "XB",
+                "qta": 24
+            },
+            {
+                "platform": "Misc",
+                "qta": 58
+            }
+        ]
+    },
+    {
+        "genre": "Sports",
+        "platformProduction": [
+            {
+                "platform": "DS",
+                "qta": 148
+            },
+            {
+                "platform": "GBA",
+                "qta": 88
+            },
+            {
+                "platform": "GC",
+                "qta": 110
+            },
+            {
+                "platform": "N64",
+                "qta": 80
+            },
+            {
+                "platform": "PC",
+                "qta": 49
+            },
+            {
+                "platform": "PS",
+                "qta": 222
+            },
+            {
+                "platform": "PS2",
+                "qta": 400
+            },
+            {
+                "platform": "PS3",
+                "qta": 213
+            },
+            {
+                "platform": "PSP",
+                "qta": 135
+            },
+            {
+                "platform": "SNES",
+                "qta": 49
+            },
+            {
+                "platform": "Wii",
+                "qta": 261
+            },
+            {
+                "platform": "X360",
+                "qta": 220
+            },
+            {
+                "platform": "XB",
+                "qta": 170
+            },
+            {
+                "platform": "Misc",
+                "qta": 201
+            }
+        ]
+    },
+    {
+        "genre": "Strategy",
+        "platformProduction": [
+            {
+                "platform": "3DS",
+                "qta": 15
+            },
+            {
+                "platform": "DS",
+                "qta": 79
+            },
+            {
+                "platform": "GBA",
+                "qta": 18
+            },
+            {
+                "platform": "PC",
+                "qta": 188
+            },
+            {
+                "platform": "PS",
+                "qta": 70
+            },
+            {
+                "platform": "PS2",
+                "qta": 71
+            },
+            {
+                "platform": "PS3",
+                "qta": 24
+            },
+            {
+                "platform": "PSP",
+                "qta": 60
+            },
+            {
+                "platform": "SAT",
+                "qta": 18
+            },
+            {
+                "platform": "SNES",
+                "qta": 15
+            },
+            {
+                "platform": "Wii",
+                "qta": 25
+            },
+            {
+                "platform": "X360",
+                "qta": 28
+            },
+            {
+                "platform": "XB",
+                "qta": 21
+            },
+            {
+                "platform": "Misc",
+                "qta": 49
+            }
+        ]
+    }
+]
