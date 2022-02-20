@@ -1,5 +1,44 @@
-#graphic {
+#main{
+    position:static;
+    height: 100%;
+}
+
+#sumup{    
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
     padding-top: 1%;
+}
+
+#svgsumup {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-color:#f2e9e4;
+}
+
+
+#graphic {
+    position: static;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    /* display: flex; */
+    height: 100%;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items:flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -o-object-fit: fill;
+    object-fit: fill;
+    background-color: #f2e9e4;
   }  
 
 #sections {
@@ -14,7 +53,7 @@
     position: relative;
     display: inline-block;
     height: 100%;
-    width: 400px;
+    width: 100%;
     z-index: 0;
 }
 
@@ -28,27 +67,21 @@
 }
 
 #vis {
-    display: inline-block;
-    position: fixed;
-    margin-left: 80px;
-    width: 75%;
-    height: 93%;
-    /* width: 75%;
-    height: 95%; */
+    position: sticky;
+    top: 0;
+    /* height: 100%; */
+    width: 80%;
+    height: 100%;
+    margin-top: 5%;
     background-color: rgba(216, 237, 238, 0.288);
 }
 
 #visSvgMain{
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    grid-template-rows: 150px 1fr;
-    display: inline-block;
-    position: relative;
+    display: block;
+    position: absolute;
     padding-bottom:10px;
-    margin: auto;
-    margin-top: 5px;
-    height: 100%;
-    width: 95%;
+    width: 100%;
+    height: 100vh;
 }
 
 text {

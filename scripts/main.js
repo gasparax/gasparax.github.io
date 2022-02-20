@@ -35,6 +35,10 @@ dimensions = {
     svgVis: {
         width: 800,
         height: 800
+    },
+    svgSumup: {
+        width: 800,
+        height: 1000
     }
 }
 var marginLineChart = { top: 50, right: 30, bottom: 30, left: 50 };
@@ -48,6 +52,10 @@ var heightBarChart = 400 - marginBarChart.top - marginBarChart.bottom;
 var marginPieChart = { top: 50, right: 30, bottom: 30, left: 100 };
 var widthPieChart = dimensions.svgVis.width - marginLineChart.left - marginLineChart.right;
 var heightPieChart = widthPieChart;
+
+var marginDonutChart = { top: 50, right: 30, bottom: 30, left: 100 };
+var widthDonutChart = dimensions.svgVis.width - marginLineChart.left - marginLineChart.right;
+var heightDonutChart = widthDonutChart;
 
 async function scrollVis() {
     // Keep track of which visualization
@@ -386,7 +394,7 @@ async function setupScrollSection(filename, scrollSection) {
 
     var svgSections = scrollSection.append('svg')
         .attr('id', 'svgSections')
-        .attr('height', dimensions.height);
+        .attr('height', dimensions.height + dimensions.maxRadius);
 
     var labelSpace = 20;
     var topPadding = (dimensions.maxRadius / 2) + labelSpace;
@@ -455,6 +463,21 @@ async function setupScrollSection(filename, scrollSection) {
     });
 }
 
+async function darwDonutChart(filenameDonut) {
+    // setSizesUpdate()
+    const dataset = await d3.json(filenameDonut);
+    const donutSvg = d3.select('#svgsumup')
+    var width = parseInt(d3.select('#svgsumup').style('width'), 10);
+    var height = parseInt(d3.select('#svgsumup').style('height'), 10);
+    const donutGroup = donutSvg.append('g')
+        .attr('id', 'donutchart')
+        .attr("transform", `translate(${width/2}, ${height/2})`);
+
+
+    donutChart(donutGroup, dataset, widthDonutChart, heightDonutChart, genrePalette)
+
+}
+
 function setSizesUpdate() {
     dimensions.svgVis.width = parseInt(d3.select('#visSvgMain').style('width'), 10);
     dimensions.svgVis.height = parseInt(d3.select('#visSvgMain').style('height'), 10);
@@ -467,13 +490,17 @@ function setSizesUpdate() {
 
     widthPieChart = dimensions.svgVis.width * 0.5 - marginPieChart.left - marginPieChart.right;
     heightPieChart = widthPieChart;
+
+    widthDonutChart = dimensions.svgSumup.width - marginDonutChart.left - marginDonutChart.right;
+    heightDonutChart = widthDonutChart;
 };
 
 function drawing() {
-    const filename_bubble = '../data_cleaning/dataset/bubble_data.json';
-
+    const filenameBubble = '../data_cleaning/dataset/bubble_data.json';
+    const filenameDonut = '../data_cleaning/dataset/genreSales_data.json';
+    darwDonutChart(filenameDonut);
     var scrollSection = d3.select('#sections');
-    setupScrollSection(filename_bubble, scrollSection);
+    setupScrollSection(filenameBubble, scrollSection);
 }
 
 drawing()
