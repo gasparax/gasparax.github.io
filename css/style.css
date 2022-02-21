@@ -1,45 +1,39 @@
-#main{
-    position:static;
+#main {
+    position: static;
     height: 100%;
 }
 
-#sumup{    
+#sumup {
     display: inline-block;
     position: relative;
     justify-content: center;
     width: 100%;
-    height: 30%;
-    padding-top: 1%;
+    height: 50%;
+    margin-top: 1%;
+}
+
+#titledonut {
+    position: absolute;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f2e9e4;
 }
 
 #svgsumup {
+    border-radius: 25px;
     position: relative;
+    padding-top: 2%;
     width: 100%;
-    height: 800px;
-    background-color:#f2e9e4;
+    background-color: #f2e9e4;
 }
 
-
 #graphic {
+    border-radius: 25px;
     position: static;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    /* display: flex; */
+    display: flex;
     height: 100%;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    -webkit-box-align: start;
-    -webkit-align-items:flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -o-object-fit: fill;
-    object-fit: fill;
     background-color: #f2e9e4;
-  }  
+}
 
 #sections {
     position: relative;
@@ -52,15 +46,11 @@
 #svgSections {
     position: relative;
     display: inline-block;
-    height: 100%;
     width: 100%;
-    margin-top:10px;
     z-index: 0;
 }
 
 #grpSections {
-    position: relative;
-    margin-top: 20px;
     text-align: center;
 }
 
@@ -69,36 +59,42 @@
 }
 
 #vis {
+    border-radius: 25px;
     position: sticky;
     top: 0;
     /* height: 100%; */
     width: 75%;
     height: 100%;
     margin-top: 5%;
+    margin-left: 5%;
     background-color: rgba(216, 237, 238, 0.288);
 }
 
-#visSvgMain{
+#visSvgMain {
     display: block;
     position: absolute;
-    padding-bottom:10px;
+    padding-bottom: 10px;
     width: 100%;
     height: 100vh;
+}
+
+.grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0.7;
+    shape-rendering: crispEdges;
+}
+
+.grid path {
+    stroke-width: 0;
 }
 
 text {
     font-family: 'Quicksand', sans-serif;
 }
 
-#title{
-    text-align: center; 
+#title {
+    text-align: center;
     font-family: 'Quicksand', sans-serif;
-}
-
-#titledonut{
-    text-align: center; 
-    font-family: 'Quicksand', sans-serif;
-    background-color: #f2e9e4;
 }
 
 /* #visGroupMain{

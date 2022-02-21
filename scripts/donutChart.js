@@ -30,10 +30,14 @@ function donutChart(selection, data, widthDonutChart, heightDonutChart, genrePal
     .innerRadius(radius * 0.9)
     .outerRadius(radius * 0.9)
 
-  let angleInterpolation = d3.interpolate(pie.startAngle()(), pie.endAngle()());
-
-  let innerRadiusInterpolation = d3.interpolate(0, 0);
-  let outerRadiusInterpolation = d3.interpolate(0, radius);
+  //Title
+  console.log(widthDonutChart)
+  selection.append('text')
+    .attr('id', 'titledonut')
+    .attr('y',-heightDonutChart/2)
+    .attr("text-anchor", "middle")
+    .style("font-size", widthDonutChart*0.015)
+    .text("Total videogames sales based on genre");
 
   // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
   selection
@@ -53,6 +57,7 @@ function donutChart(selection, data, widthDonutChart, heightDonutChart, genrePal
     .join('polyline')
     .attr("stroke", "black")
     .style("fill", "none")
+    .transition()
     .attr("stroke-width", 1)
     .attr('points', function (d) {
       const posA = arc.centroid(d) // line insertion in the slice
@@ -63,7 +68,7 @@ function donutChart(selection, data, widthDonutChart, heightDonutChart, genrePal
       return [posA, posB, posC]
     })
 
-  const fontSize = 23;
+  const fontSize = widthDonutChart*0.015;
 
   // Add the polylines between chart and labels:
   selection

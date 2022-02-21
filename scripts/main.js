@@ -75,11 +75,6 @@ async function scrollVis() {
     // the activation function for that
     // section is called.
     var activateFunctions = [];
-    // If a section has an update function
-    // then it is called while scrolling
-    // through the section with the current
-    // progress through the section.
-    var updateFunctions = [];
     const filenameGenreSalesYearTrend = '../data_cleaning/dataset/salesTrend_data.json'
     const filenameGenreProdTrend = '../data_cleaning/dataset/devTrendPlatform_data.json'
     const filenameGenreSalesRegions = '../data_cleaning/dataset/salesRegions_data.json'
@@ -194,6 +189,7 @@ async function scrollVis() {
 
 
     var updateVisSection = function (index, lineChartData, barChartData, pieChartData) {
+        setSizesUpdate()
         // line chart
         const lineChartSelection = d3.select('#linechart');
         const parseDate = d3.timeParse('%Y');
@@ -372,38 +368,40 @@ async function setupScrollSection(filename, scrollSection) {
     let dimensions = {
         width: maxRadius,
         height: nSections * bubblesDistance,
-        maxRadius: 380,
         margins: {
-            top: 50,
+            top: 30,
             bottom: 25,
-            left: 100,
-            right: 25,
+            left: 30,
+            right: 30,
         }
     }
 
     const genreAccessor = (d) => d.genre;
     const qtAccessor = (d) => d.qta;
 
+    var widthSectionsDiv = parseInt(d3.select('#sections').style('width'), 10)
+
+    dimensions.width = widthSectionsDiv - dimensions.margins.left - dimensions.margins.right;
+    maxRadius = Math.min(dimensions.width, dimensions.height) /2;   
+    bubblesDistance =  dimensions.width*1.8
+    dimensions.height = nSections * bubblesDistance;
     const radiusScaler = d3.scaleLinear()
         .domain(d3.extent(dataset, qtAccessor))
         .range([0, maxRadius])
         .nice();
 
-    //Color Scaler
-    var blues = d3.scaleOrdinal(d3.schemeAccent);
-
     var svgSections = scrollSection.append('svg')
         .attr('id', 'svgSections')
-        .attr('height', dimensions.height + dimensions.maxRadius);
-
-    var labelSpace = 30;
-    var topPadding = (dimensions.maxRadius / 2) + labelSpace;
+        .attr('height', dimensions.height + maxRadius);
+    
+    var labelSpace = maxRadius*0.08;
+    var topPadding = (dimensions.width*0.6) + labelSpace;
 
     var ctr = svgSections.append('g')
         .attr('id', 'grpSections')
-        .attr(
+        .attr( 
             'transform',
-            `translate(${dimensions.margins.left}, ${topPadding + 50})`
+            `translate(${dimensions.margins.left}, ${topPadding})`
         );
 
     var bubble = ctr.selectAll('circle')
@@ -416,7 +414,7 @@ async function setupScrollSection(filename, scrollSection) {
         .style('fill', (d, i) => genrePalette[i]);
 
     const labelsGruop = ctr.append('g');
-    const fontSize = 22;
+    const fontSize = maxRadius*0.165;
     labelsGruop.selectAll('text')
         .data(dataset)
         .join('text')
@@ -434,7 +432,7 @@ async function setupScrollSection(filename, scrollSection) {
                 .text(d => qtAccessor(d) + ' - Produced Games')
                 .attr('x', dimensions.width / 2)
                 .attr('y', (d, i) =>
-                    (bubblesDistance * ((i % dataset.length))) + labelSpace + 10 + radiusScaler(qtAccessor(d)))
+                    (bubblesDistance * ((i % dataset.length))) + labelSpace + 20 + radiusScaler(qtAccessor(d)))
                 .attr("text-anchor", "middle")
                 .style('font-size', fontSize)
         );
@@ -466,15 +464,18 @@ async function setupScrollSection(filename, scrollSection) {
 async function darwDonutChart(filenameDonut) {
     // setSizesUpdate()
     const dataset = await d3.json(filenameDonut);
+    var width = parseInt(d3.select('#sumup').style('width'), 10);
+    var height = parseInt(d3.select('#sumup').style('height'), 10);
+    console.log(height)
+    var margin = 50;
+    height = (width*0.85/2);
     const donutSvg = d3.select('#svgsumup')
-    var width = parseInt(d3.select('#svgsumup').style('width'), 10);
-    var height = parseInt(d3.select('#svgsumup').style('height'), 10);
+        .attr('height', height)
+
     const donutGroup = donutSvg.append('g')
         .attr('id', 'donutchart')
         .attr("transform", `translate(${width/2}, ${height/2})`);
-
-
-    donutChart(donutGroup, dataset, widthDonutChart, heightDonutChart, genrePalette)
+    donutChart(donutGroup, dataset, width- margin, height-margin, genrePalette)
 
 }
 
@@ -488,7 +489,7 @@ function setSizesUpdate() {
     widthBarChart = dimensions.svgVis.width * 0.8 - marginBarChart.left - marginBarChart.right;
     heightBarChart = dimensions.svgVis.height / 2 - marginBarChart.top - marginBarChart.bottom;
 
-    widthPieChart = dimensions.svgVis.width * 0.5 - marginPieChart.left - marginPieChart.right;
+    widthPieChart = dimensions.svgVis.width * 0.45 - marginPieChart.left - marginPieChart.right;
     heightPieChart = widthPieChart;
 
     widthDonutChart = dimensions.svgSumup.width - marginDonutChart.left - marginDonutChart.right;

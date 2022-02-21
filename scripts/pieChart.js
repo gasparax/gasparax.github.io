@@ -1,6 +1,6 @@
 function pieChart(selection, data, widthPieChart, heightPieChart) {
 
-    const radius = widthPieChart / 2;
+    const radius = Math.min(widthPieChart, heightPieChart) / 2;
 
     var ctr = selection;
     d3.selectAll('.pieChartLabels').attr('opacity', 0);
@@ -11,7 +11,6 @@ function pieChart(selection, data, widthPieChart, heightPieChart) {
         .sort(null)
     const slices = populationPie(data);
 
-    const colors = d3.quantize(d3.interpolateSpectral, data.length)
     const colorScale = d3.scaleOrdinal()
         .domain(data.map(element => element.region))
         .range(['#577590','#f3ca40','#f2a541'])
@@ -71,6 +70,7 @@ function pieChart(selection, data, widthPieChart, heightPieChart) {
         .outerRadius(radius)
         .innerRadius(radius - 120);
 
+    var fontSize = widthPieChart
     labelsGroup.selectAll('text')
         .data(slices)
         .join('text')
@@ -80,7 +80,7 @@ function pieChart(selection, data, widthPieChart, heightPieChart) {
                 .attr( "fill-opacity", 0 ).transition().duration(2000)
                 .attr( "fill-opacity", 1 )
                 .style('font-weight', 'bold')
-                .style('font-size', '18')
+                .style('font-size', fontSize)
                 .style("text-anchor", "middle")
                 .attr('y', -4)
                 .text(d => d.data.region)
@@ -91,7 +91,7 @@ function pieChart(selection, data, widthPieChart, heightPieChart) {
                 .attr( "fill-opacity", 0 ).transition().duration(2000)
                 .attr( "fill-opacity", 1 )
                 .style("text-anchor", "middle")
-                .style('font-size', '18')
+                .style('font-size', fontSize)
                 .attr('y', 14)
                 .attr('x', 0)
                 .text(d => (d.data.sales) + ' Mln')
