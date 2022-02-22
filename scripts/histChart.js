@@ -1,3 +1,37 @@
+platformNames = {
+    'Wii': 'Nintendo Wii',
+    'NES': 'Nintendo Entertainment System',
+    'GB': 'Game Boy',
+    'DS': 'Nintendo DS',
+    'X360': 'Xbox 360',
+    'PS3': 'PlayStation 3',
+    'PS2': 'PlayStation 2',
+    'SNES': 'Super Nintendo Entertainment System',
+    'GBA': 'Game Boy Advance',
+    '3DS': 'Nintendo 3DS',
+    'PS4': 'PlayStation 4',
+    'N64': 'Nintendo 64',
+    'PS': 'PlayStation',
+    'XB': 'Xbox',
+    'PC': 'Personal Computer',
+    '2600': 'Atari 2600',
+    'PSP': 'PlayStation Portable',
+    'XOne': 'Xbox One',
+    'GC': 'Game Cube',
+    'WiiU': 'Wii U',
+    'GEN': 'Sega Genesis',
+    'DC': 'Sega Dreamcast',
+    'PSV': 'PlayStation Vita',
+    'SAT': 'Sega Saturn',
+    'SCD': 'Sega CD',
+    'WS': 'WonderSwan',
+    'NG': 'Neo Geo',
+    'TG16': 'TurboGrafx-16',
+    '3DO': '3DO Interactive Multiplayer',
+    'GG': 'Game Gear',
+    'PCFX': 'PC-FX'
+}
+
 function histChart(selection, data, widthBarChart, heightBarChart, fillColor) {
     //Creaiamo una sorta di buffer delle transazioni
     //che vengono fatte da d3.
@@ -25,7 +59,7 @@ function histChart(selection, data, widthBarChart, heightBarChart, fillColor) {
     // Three function that change the tooltip when user hover / move / leave a cell
     const mouseover = function (event, d) {
         console.log(d)
-        const platform = xAccessor(d);
+        const platform = platformNames[xAccessor(d)];
         const qta = yAccessor(d);
         tooltip
             .html("Console: " + platform + "<br>" + "Games produced: " + qta)
@@ -63,7 +97,7 @@ function histChart(selection, data, widthBarChart, heightBarChart, fillColor) {
                 .attr('y', heightBarChart)
                 .attr('height', 0)
                 .remove()
-        )      
+        )
         .on("mouseover", mouseover)
         .on("mousemove", mousemove)
         .on("mouseleave", mouseleave)
