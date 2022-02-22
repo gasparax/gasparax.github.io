@@ -2,7 +2,6 @@ function pieChart(selection, data, widthPieChart, heightPieChart) {
 
     const radius = Math.min(widthPieChart, heightPieChart) / 2;
 
-    var ctr = selection;
     d3.selectAll('.pieChartLabels').attr('opacity', 0);
     // Add the Pie
     //funzione pie formatta i dati
@@ -15,10 +14,9 @@ function pieChart(selection, data, widthPieChart, heightPieChart) {
         .domain(data.map(element => element.region))
         .range(['#577590','#f3ca40','#f2a541'])
 
-    const arcGroup = ctr.append('g')
-        .attr(
-            'transform',
-            `translate(${widthPieChart / 2}, ${heightPieChart / 2})`)
+    const arcGroup = selection.selectAll('pieAcrs')
+        .append('g')
+        .classed('pieAcrs', true)
 
     //funzione arc disegna l'arco
     const arc = d3.arc()
@@ -30,9 +28,12 @@ function pieChart(selection, data, widthPieChart, heightPieChart) {
     let innerRadiusInterpolation = d3.interpolate(0, 0);
     let outerRadiusInterpolation = d3.interpolate(0, radius);
     //draw shape
-    arcGroup.selectAll('path')
+    selection.selectAll('path')
         .data(slices)
         .join('path')
+        .attr(
+            'transform',
+            `translate(${widthPieChart / 2}, ${heightPieChart / 2})`)
         .attr('d', arc)
         .attr('fill', d => colorScale(d.data.region))
         .transition()
@@ -60,7 +61,7 @@ function pieChart(selection, data, widthPieChart, heightPieChart) {
         });
 
     //LABELS
-    const labelsGroup = ctr.append('g')
+    const labelsGroup = selection.append('g')
         .attr(
             'transform',
             `translate(${widthPieChart / 2}, ${heightPieChart / 2})`)

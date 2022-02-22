@@ -97,6 +97,9 @@ text {
     font-family: 'Quicksand', sans-serif;
 }
 
+.tooltip {
+    z-index: 10;
+}
 /* #visGroupMain{
 
 } */

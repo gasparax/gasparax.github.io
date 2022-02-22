@@ -5,6 +5,8 @@ function donutChart(selection, data, widthDonutChart, heightDonutChart, genrePal
   // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
   const radius = Math.min(widthDonutChart, heightDonutChart) / 2
 
+  // //Sort Values
+  // data.sort(function(a, b){return a.sales-b.sales});
   //Data Accessor
   const salesAccessor = d => d.sales
   const genreAccessor = d => d.genre
@@ -31,7 +33,6 @@ function donutChart(selection, data, widthDonutChart, heightDonutChart, genrePal
     .outerRadius(radius * 0.9)
 
   //Title
-  console.log(widthDonutChart)
   selection.append('text')
     .attr('id', 'titledonut')
     .attr('y',-heightDonutChart/2)

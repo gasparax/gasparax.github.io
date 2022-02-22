@@ -19,7 +19,36 @@ function histChart(selection, data, widthBarChart, heightBarChart, fillColor) {
         .range([heightBarChart, 0])
         .nice();
 
+    // create tooltip element 
+    const tooltip = d3.select('.tooltip')
 
+    // Three function that change the tooltip when user hover / move / leave a cell
+    const mouseover = function (event, d) {
+        console.log(d)
+        const platform = xAccessor(d);
+        const qta = yAccessor(d);
+        tooltip
+            .html("Console: " + platform + "<br>" + "Games produced: " + qta)
+            .style('font-family', 'Quicksand, sans-serif')
+            .style("opacity", 1)
+
+    }
+    const mousemove = function (event, d) {
+        console.log(event.x)
+        console.log(event.y)
+        tooltip.style("transform", "translateY(-55%)")
+            .style("left", (event.x - 350) + 'px')
+            .style("top", (event.y - 10) + 'px')
+    }
+    const mouseleave = function (event, d) {
+        tooltip
+            .style("opacity", 0)
+    }
+
+
+    //tooltip colors
+    staticColor = '#437c90';
+    hoverColor = '#eec42d';
     //Draw Bars
     selection.selectAll('rect')
         .data(data)
@@ -34,7 +63,10 @@ function histChart(selection, data, widthBarChart, heightBarChart, fillColor) {
                 .attr('y', heightBarChart)
                 .attr('height', 0)
                 .remove()
-        )
+        )      
+        .on("mouseover", mouseover)
+        .on("mousemove", mousemove)
+        .on("mouseleave", mouseleave)
         //transition restituisce una selection 
         //da cui è possibile chiamare funzioni per animare le transazioni
         .transition(updateTransition)
@@ -43,5 +75,5 @@ function histChart(selection, data, widthBarChart, heightBarChart, fillColor) {
         .attr('fill', fillColor)
         //x0 è un nuovo attributo che crea D3 per i bin e indica il lower bound del bin
         .attr('x', d => xScale(xAccessor(d)))
-        .attr('y', d => yScale(yAccessor(d)));
+        .attr('y', d => yScale(yAccessor(d)))
 }

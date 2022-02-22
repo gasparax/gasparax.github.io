@@ -110,6 +110,17 @@ async function scrollVis() {
     var setupVis = function () {
 
         setSizesUpdate()
+        
+        // create tooltip element 
+        const tooltip = d3.select('#vis')
+            .append("div")
+            .style("opacity", 0)
+            .attr("class", "tooltip")
+            .style('position', 'absolute')
+            .style('background', 'rgba(0,0,0,0.6)')
+            .style('border-radius', '4px')
+            .style('color', '#fff')
+            .style("padding", "10px")
 
         //line chart
         var lineChart = visGroup.append('g')
@@ -152,7 +163,6 @@ async function scrollVis() {
             .attr('opacity', 0);
 
         // Initialise barChart X axis:
-
         barChart.append('g')
             .style('transform', `translateY(${heightBarChart}px)`)
             .attr("id", "barChartXAxis");
@@ -265,7 +275,6 @@ async function scrollVis() {
         const pieChartSelection = d3.select('#piechart');
         pieChartSelection.attr('opacity', 1.0)
         pieChart(pieChartSelection, pieChartData, widthPieChart, heightPieChart)
-
 
     }
 
@@ -382,8 +391,8 @@ async function setupScrollSection(filename, scrollSection) {
     var widthSectionsDiv = parseInt(d3.select('#sections').style('width'), 10)
 
     dimensions.width = widthSectionsDiv - dimensions.margins.left - dimensions.margins.right;
-    maxRadius = Math.min(dimensions.width, dimensions.height) /2;   
-    bubblesDistance =  dimensions.width*1.8
+    maxRadius = Math.min(dimensions.width, dimensions.height) / 2;
+    bubblesDistance = dimensions.width * 1.8
     dimensions.height = nSections * bubblesDistance;
     const radiusScaler = d3.scaleLinear()
         .domain(d3.extent(dataset, qtAccessor))
@@ -393,13 +402,13 @@ async function setupScrollSection(filename, scrollSection) {
     var svgSections = scrollSection.append('svg')
         .attr('id', 'svgSections')
         .attr('height', dimensions.height + maxRadius);
-    
-    var labelSpace = maxRadius*0.08;
-    var topPadding = (dimensions.width*0.6) + labelSpace;
+
+    var labelSpace = maxRadius * 0.08;
+    var topPadding = (dimensions.width * 0.6) + labelSpace;
 
     var ctr = svgSections.append('g')
         .attr('id', 'grpSections')
-        .attr( 
+        .attr(
             'transform',
             `translate(${dimensions.margins.left}, ${topPadding})`
         );
@@ -414,7 +423,7 @@ async function setupScrollSection(filename, scrollSection) {
         .style('fill', (d, i) => genrePalette[i]);
 
     const labelsGruop = ctr.append('g');
-    const fontSize = maxRadius*0.165;
+    const fontSize = maxRadius * 0.165;
     labelsGruop.selectAll('text')
         .data(dataset)
         .join('text')
@@ -466,16 +475,15 @@ async function darwDonutChart(filenameDonut) {
     const dataset = await d3.json(filenameDonut);
     var width = parseInt(d3.select('#sumup').style('width'), 10);
     var height = parseInt(d3.select('#sumup').style('height'), 10);
-    console.log(height)
     var margin = 50;
-    height = (width*0.85/2);
+    height = (width * 0.85 / 2);
     const donutSvg = d3.select('#svgsumup')
         .attr('height', height)
 
     const donutGroup = donutSvg.append('g')
         .attr('id', 'donutchart')
-        .attr("transform", `translate(${width/2}, ${height/2})`);
-    donutChart(donutGroup, dataset, width- margin, height-margin, genrePalette)
+        .attr("transform", `translate(${width / 2}, ${height / 2})`);
+    donutChart(donutGroup, dataset, width - margin, height - margin, genrePalette)
 
 }
 
