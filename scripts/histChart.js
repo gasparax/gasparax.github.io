@@ -71,7 +71,7 @@ function histChart(selection, data, widthBarChart, heightBarChart, fillColor) {
         console.log(event.x)
         console.log(event.y)
         tooltip.style("transform", "translateY(-55%)")
-            .style("left", (event.x - 350) + 'px')
+            .style("left", (event.x - 520) + 'px')
             .style("top", (event.y - 10) + 'px')
     }
     const mouseleave = function (event, d) {
