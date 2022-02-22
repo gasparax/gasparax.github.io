@@ -49,7 +49,7 @@ function pieChart(selection, data, widthPieChart, heightPieChart) {
                 return arc(d);
             };
         })
-        .attr("stroke", "white")
+        .attr("stroke", "#203239")
         .style("stroke-width", "3px")
         .style("opacity", 1);
 

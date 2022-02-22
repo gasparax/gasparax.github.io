@@ -47,7 +47,7 @@ function donutChart(selection, data, widthDonutChart, heightDonutChart, genrePal
     .join('path')
     .attr('d', arc)
     .attr('fill', d => color(genreAccessor(d.data)))
-    .attr("stroke", "white")
+    .attr("stroke", "#141E27")
     .style("stroke-width", "2px")
     .style("opacity", 0.7)
 
