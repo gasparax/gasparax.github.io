@@ -404,7 +404,7 @@ async function setupScrollSection(filename, scrollSection) {
         .attr('height', dimensions.height + maxRadius);
 
     var labelSpace = maxRadius * 0.08;
-    var topPadding = (dimensions.width * 0.6) + labelSpace;
+    var topPadding = (dimensions.width) + labelSpace;
 
     var ctr = svgSections.append('g')
         .attr('id', 'grpSections')
