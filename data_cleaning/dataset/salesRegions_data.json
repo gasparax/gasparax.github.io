@@ -3,15 +3,15 @@
         "genre": "Action",
         "regions": [
             {
-                "region": "NA_Sales",
+                "region": "NA Sales",
                 "sales": 877.83
             },
             {
-                "region": "EU_Sales",
+                "region": "EU Sales",
                 "sales": 525.0
             },
             {
-                "region": "JP_Sales",
+                "region": "JP Sales",
                 "sales": 159.94
             }
         ]
@@ -20,15 +20,15 @@
         "genre": "Adventure",
         "regions": [
             {
-                "region": "NA_Sales",
+                "region": "NA Sales",
                 "sales": 105.8
             },
             {
-                "region": "EU_Sales",
+                "region": "EU Sales",
                 "sales": 64.13
             },
             {
-                "region": "JP_Sales",
+                "region": "JP Sales",
                 "sales": 52.07
             }
         ]
@@ -37,15 +37,15 @@
         "genre": "Fighting",
         "regions": [
             {
-                "region": "NA_Sales",
+                "region": "NA Sales",
                 "sales": 223.59
             },
             {
-                "region": "EU_Sales",
+                "region": "EU Sales",
                 "sales": 101.32
             },
             {
-                "region": "JP_Sales",
+                "region": "JP Sales",
                 "sales": 87.35
             }
         ]
@@ -54,15 +54,15 @@
         "genre": "Misc",
         "regions": [
             {
-                "region": "NA_Sales",
+                "region": "NA Sales",
                 "sales": 410.24
             },
             {
-                "region": "EU_Sales",
+                "region": "EU Sales",
                 "sales": 215.98
             },
             {
-                "region": "JP_Sales",
+                "region": "JP Sales",
                 "sales": 107.76
             }
         ]
@@ -71,15 +71,15 @@
         "genre": "Platform",
         "regions": [
             {
-                "region": "NA_Sales",
+                "region": "NA Sales",
                 "sales": 447.05
             },
             {
-                "region": "EU_Sales",
+                "region": "EU Sales",
                 "sales": 201.63
             },
             {
-                "region": "JP_Sales",
+                "region": "JP Sales",
                 "sales": 130.77
             }
         ]
@@ -88,15 +88,15 @@
         "genre": "Puzzle",
         "regions": [
             {
-                "region": "NA_Sales",
+                "region": "NA Sales",
                 "sales": 123.78
             },
             {
-                "region": "EU_Sales",
+                "region": "EU Sales",
                 "sales": 50.78
             },
             {
-                "region": "JP_Sales",
+                "region": "JP Sales",
                 "sales": 57.31
             }
         ]
@@ -105,15 +105,15 @@
         "genre": "Racing",
         "regions": [
             {
-                "region": "NA_Sales",
+                "region": "NA Sales",
                 "sales": 359.42
             },
             {
-                "region": "EU_Sales",
+                "region": "EU Sales",
                 "sales": 238.39
             },
             {
-                "region": "JP_Sales",
+                "region": "JP Sales",
                 "sales": 56.69
             }
         ]
@@ -122,15 +122,15 @@
         "genre": "Role-Playing",
         "regions": [
             {
-                "region": "NA_Sales",
+                "region": "NA Sales",
                 "sales": 327.28
             },
             {
-                "region": "EU_Sales",
+                "region": "EU Sales",
                 "sales": 188.06
             },
             {
-                "region": "JP_Sales",
+                "region": "JP Sales",
                 "sales": 352.27
             }
         ]
@@ -139,15 +139,15 @@
         "genre": "Shooter",
         "regions": [
             {
-                "region": "NA_Sales",
+                "region": "NA Sales",
                 "sales": 582.6
             },
             {
-                "region": "EU_Sales",
+                "region": "EU Sales",
                 "sales": 313.27
             },
             {
-                "region": "JP_Sales",
+                "region": "JP Sales",
                 "sales": 38.28
             }
         ]
@@ -156,15 +156,15 @@
         "genre": "Simulation",
         "regions": [
             {
-                "region": "NA_Sales",
+                "region": "NA Sales",
                 "sales": 183.04
             },
             {
-                "region": "EU_Sales",
+                "region": "EU Sales",
                 "sales": 113.38
             },
             {
-                "region": "JP_Sales",
+                "region": "JP Sales",
                 "sales": 63.7
             }
         ]
@@ -173,15 +173,15 @@
         "genre": "Sports",
         "regions": [
             {
-                "region": "NA_Sales",
+                "region": "NA Sales",
                 "sales": 683.35
             },
             {
-                "region": "EU_Sales",
+                "region": "EU Sales",
                 "sales": 376.85
             },
             {
-                "region": "JP_Sales",
+                "region": "JP Sales",
                 "sales": 135.37
             }
         ]
@@ -190,15 +190,15 @@
         "genre": "Strategy",
         "regions": [
             {
-                "region": "NA_Sales",
+                "region": "NA Sales",
                 "sales": 68.7
             },
             {
-                "region": "EU_Sales",
+                "region": "EU Sales",
                 "sales": 45.34
             },
             {
-                "region": "JP_Sales",
+                "region": "JP Sales",
                 "sales": 49.46
             }
         ]

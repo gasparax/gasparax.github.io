@@ -12,6 +12,7 @@ function donutChart(selection, data, widthDonutChart, heightDonutChart, genrePal
   const genreAccessor = d => d.genre
 
   // set the color scale
+  // const colors = d3.quantize(d3.schemeRdYlGn,data.lenght)
   const color = d3.scaleOrdinal()
     .domain(data.map(element => genreAccessor(element)))
     .range(genrePalette);
