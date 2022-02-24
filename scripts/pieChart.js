@@ -5,10 +5,10 @@ function pieChart(selection, data, widthPieChart, heightPieChart) {
     d3.selectAll('.pieChartLabels').attr('opacity', 0);
     // Add the Pie
     //funzione pie formatta i dati
-    const populationPie = d3.pie()
+    const pie = d3.pie()
         .value(d => d.sales)
         .sort(null)
-    const slices = populationPie(data);
+    const slices = pie(data);
 
     const colorScale = d3.scaleOrdinal()
         .domain(data.map(element => element.region))
@@ -23,7 +23,7 @@ function pieChart(selection, data, widthPieChart, heightPieChart) {
         .outerRadius(radius)
         .innerRadius(0);
 
-    let angleInterpolation = d3.interpolate(populationPie.startAngle()(), populationPie.endAngle()());
+    let angleInterpolation = d3.interpolate(pie.startAngle()(), pie.endAngle()());
 
     let innerRadiusInterpolation = d3.interpolate(0, 0);
     let outerRadiusInterpolation = d3.interpolate(0, radius);
@@ -69,9 +69,9 @@ function pieChart(selection, data, widthPieChart, heightPieChart) {
 
     const arcLabels = d3.arc()
         .outerRadius(radius)
-        .innerRadius(radius - 120);
+        .innerRadius(radius*0.45);
 
-    var fontSize = widthPieChart
+    var fontSize = radius*0.095
     labelsGroup.selectAll('text')
         .data(slices)
         .join('text')
@@ -81,7 +81,7 @@ function pieChart(selection, data, widthPieChart, heightPieChart) {
                 .attr( "fill-opacity", 0 ).transition().duration(2000)
                 .attr( "fill-opacity", 1 )
                 .style('font-weight', 'bold')
-                .style('font-size', fontSize)
+                .style('font-size', fontSize + 'px')
                 .style("text-anchor", "middle")
                 .attr('y', -4)
                 .text(d => d.data.region)
@@ -92,8 +92,8 @@ function pieChart(selection, data, widthPieChart, heightPieChart) {
                 .attr( "fill-opacity", 0 ).transition().duration(2000)
                 .attr( "fill-opacity", 1 )
                 .style("text-anchor", "middle")
-                .style('font-size', fontSize)
-                .attr('y', 14)
+                .style('font-size', fontSize + 'px')
+                .attr('y', fontSize*0.74)
                 .attr('x', 0)
                 .text(d => (d.data.sales) + ' Mln')
         );

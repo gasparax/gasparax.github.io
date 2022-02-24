@@ -1,4 +1,4 @@
-platformNames = {
+const platformNames = {
     'Wii': 'Nintendo Wii',
     'NES': 'Nintendo Entertainment System',
     'GB': 'Game Boy',
@@ -54,7 +54,7 @@ function histChart(selection, data, widthBarChart, heightBarChart, fillColor) {
         .nice();
 
     // create tooltip element 
-    const tooltip = d3.select('.tooltip')
+    const tooltip = d3.select('#barTooltip')
 
     // Three function that change the tooltip when user hover / move / leave a cell
     const mouseover = function (event, d) {
@@ -71,7 +71,7 @@ function histChart(selection, data, widthBarChart, heightBarChart, fillColor) {
         console.log(event.x)
         console.log(event.y)
         tooltip.style("transform", "translateY(-55%)")
-            .style("left", (event.x - 520) + 'px')
+            .style("left", (event.x - widthBarChart*0.8) + 'px')
             .style("top", (event.y - 10) + 'px')
     }
     const mouseleave = function (event, d) {

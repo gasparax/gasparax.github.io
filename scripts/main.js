@@ -15,18 +15,18 @@ const genreList = [
 ];
 
 const genrePalette = [
-    "#9b2226",
-    "#ae2012",
-    "#bb3e03",
-    "#ca6702",
-    "#ee9b00",
-    "#e9d8a6",
-    "#94d2bd",
-    "#0a9396",
-    "#005f73",
-    "#aacc00",
+    "#007f5f",
     "#55a630",
-    "#007f5f"
+    "#aacc00",
+    "#005f73",
+    "#0a9396",
+    "#94d2bd",
+    "#e9d8a6",
+    "#ee9b00",
+    "#ca6702",
+    "#bb3e03",
+    "#ae2012",
+    "#9b2226"
 ];
 
 // constants to define the size
@@ -49,7 +49,7 @@ var marginBarChart = { top: 50, right: 30, bottom: 30, left: 50 };
 var widthBarChart = 600 - marginBarChart.left - marginBarChart.right;
 var heightBarChart = 400 - marginBarChart.top - marginBarChart.bottom;
 
-var marginPieChart = { top: 50, right: 30, bottom: 30, left: 100 };
+var marginPieChart = { top: 50, right: 30, bottom: 30, left: 150 };
 var widthPieChart = dimensions.svgVis.width - marginLineChart.left - marginLineChart.right;
 var heightPieChart = widthPieChart;
 
@@ -109,13 +109,13 @@ async function scrollVis() {
 
     var setupVis = function () {
 
-        setSizesUpdate()
-        
+        setSizes()
+
         // create tooltip element 
         const tooltip = d3.select('#vis')
             .append("div")
             .style("opacity", 0)
-            .attr("class", "tooltip")
+            .attr("id", "barTooltip")
             .style('position', 'absolute')
             .style('background', 'rgba(0,0,0,0.6)')
             .style('border-radius', '4px')
@@ -193,13 +193,14 @@ async function scrollVis() {
         var pieChart = visGroup.append('g')
             .attr('id', 'piechart')
             .attr('transform',
-                `translate(${marginLineChart.left + widthLineChart + marginPieChart.left},${marginBarChart.top})`)
+                `translate(${marginLineChart.left + widthLineChart + marginPieChart.left}
+                    ,${dimensions.svgVis.height * 0.25})`)
             .attr('opacity', 0);
     };
 
 
     var updateVisSection = function (index, lineChartData, barChartData, pieChartData) {
-        setSizesUpdate()
+        setSizes()
         // line chart
         const lineChartSelection = d3.select('#linechart');
         const parseDate = d3.timeParse('%Y');
@@ -394,11 +395,13 @@ async function setupScrollSection(filename, scrollSection) {
     maxRadius = Math.min(dimensions.width, dimensions.height) / 2;
     bubblesDistance = dimensions.width * 1.8
     dimensions.height = nSections * bubblesDistance;
+
     const radiusScaler = d3.scaleLinear()
         .domain(d3.extent(dataset, qtAccessor))
         .range([0, maxRadius])
         .nice();
 
+    //Draw the scrolling bubbles
     var svgSections = scrollSection.append('svg')
         .attr('id', 'svgSections')
         .attr('height', dimensions.height + maxRadius);
@@ -413,6 +416,7 @@ async function setupScrollSection(filename, scrollSection) {
             `translate(${dimensions.margins.left}, ${topPadding})`
         );
 
+    palette = genrePalette.reverse()  
     var bubble = ctr.selectAll('circle')
         .data(dataset)
         .join('circle')
@@ -471,23 +475,39 @@ async function setupScrollSection(filename, scrollSection) {
 }
 
 async function darwDonutChart(filenameDonut) {
-    // setSizesUpdate()
-    const dataset = await d3.json(filenameDonut);
+    // setSizes()
+    const datasetDonut = await d3.json(filenameDonut);
     var width = parseInt(d3.select('#sumup').style('width'), 10);
     var height = parseInt(d3.select('#sumup').style('height'), 10);
     var margin = 50;
     height = (width * 0.85 / 2);
+
+    //setup svg area and tooltip for the initial donut chart
     const donutSvg = d3.select('#svgsumup')
         .attr('height', height)
 
     const donutGroup = donutSvg.append('g')
         .attr('id', 'donutchart')
         .attr("transform", `translate(${width / 2}, ${height / 2})`);
-    donutChart(donutGroup, dataset, width - margin, height - margin, genrePalette)
+
+    console.log(width / 2, height / 2)
+
+    const donutTooltip = d3.select('#sumup')
+        .append('div')
+        .attr('id', 'donutTooltip')
+        .attr("transform", `translate(${width / 2}, ${height / 2})`)
+        .style("opacity", 0)
+        .style('position', 'absolute')
+        .style('background', 'rgba(0,0,0,0.6)')
+        .style('border-radius', '4px')
+        .style('color', '#fff')
+        .style("padding", "10px")
+
+    donutChart(donutGroup, datasetDonut, width - margin, height - margin, genrePalette)
 
 }
 
-function setSizesUpdate() {
+function setSizes() {
     dimensions.svgVis.width = parseInt(d3.select('#visSvgMain').style('width'), 10);
     dimensions.svgVis.height = parseInt(d3.select('#visSvgMain').style('height'), 10);
 
@@ -497,7 +517,7 @@ function setSizesUpdate() {
     widthBarChart = dimensions.svgVis.width * 0.8 - marginBarChart.left - marginBarChart.right;
     heightBarChart = dimensions.svgVis.height / 2 - marginBarChart.top - marginBarChart.bottom;
 
-    widthPieChart = dimensions.svgVis.width * 0.45 - marginPieChart.left - marginPieChart.right;
+    widthPieChart = dimensions.svgVis.width * 0.5 - marginPieChart.left - marginPieChart.right;
     heightPieChart = widthPieChart;
 
     widthDonutChart = dimensions.svgSumup.width - marginDonutChart.left - marginDonutChart.right;
@@ -513,4 +533,4 @@ function drawing() {
 }
 
 drawing()
-// window.addEventListener('resize', setSizesUpdate);
+// window.addEventListener('resize', setSizes);
