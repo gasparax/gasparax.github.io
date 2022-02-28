@@ -29,7 +29,8 @@ const platformNames = {
     'TG16': 'TurboGrafx-16',
     '3DO': '3DO Interactive Multiplayer',
     'GG': 'Game Gear',
-    'PCFX': 'PC-FX'
+    'PCFX': 'PC-FX',
+    'Misc': 'Miscellaneous'
 }
 
 function histChart(selection, data, widthBarChart, heightBarChart, fillColor) {
@@ -64,15 +65,17 @@ function histChart(selection, data, widthBarChart, heightBarChart, fillColor) {
         tooltip
             .html("Console: " + platform + "<br>" + "Games produced: " + qta)
             .style('font-family', 'Quicksand, sans-serif')
+            .style("text-align", "center")
             .style("opacity", 1)
 
     }
     const mousemove = function (event, d) {
-        console.log(event.x)
-        console.log(event.y)
-        tooltip.style("transform", "translateY(-55%)")
-            .style("left", (event.x - widthBarChart*0.8) + 'px')
-            .style("top", (event.y - 10) + 'px')
+        var xPos = xScale(xAccessor(d));
+        var yPos = yScale(yAccessor(d));
+        console.log(yPos)
+        tooltip
+            .style("left", (xPos) + 'px')
+            .style("top", (yPos) + 'px')
     }
     const mouseleave = function (event, d) {
         tooltip

@@ -121,6 +121,17 @@ async function scrollVis() {
             .style('border-radius', '4px')
             .style('color', '#fff')
             .style("padding", "10px")
+            .style('transform', `translateY(${heightBarChart}px)`)
+
+        const tooltipLineBubble = d3.select('#vis')
+            .append("div")
+            .style("opacity", 0)
+            .attr("id", "bubbleTooltip")
+            .style('position', 'absolute')
+            .style('background', 'rgba(0,0,0,0.6)')
+            .style('border-radius', '4px')
+            .style('color', '#fff')
+            .style("padding", "10px")
 
         //line chart
         var lineChart = visGroup.append('g')
@@ -231,7 +242,7 @@ async function scrollVis() {
             .duration(500)
             .call(yLineChartAxis);
 
-        lineChart(lineChartSelection, lineChartData, widthLineChart, heightLineChart);
+        lineChart(lineChartSelection, lineChartData, widthLineChart, heightLineChart, genrePalette[index]);
         lineChartSelection.attr('opacity', 1.0)
 
         const barChartSelection = d3.select('#barchart');
@@ -416,7 +427,7 @@ async function setupScrollSection(filename, scrollSection) {
             `translate(${dimensions.margins.left}, ${topPadding})`
         );
 
-    palette = genrePalette.reverse()  
+    palette = genrePalette.reverse()
     var bubble = ctr.selectAll('circle')
         .data(dataset)
         .join('circle')
@@ -489,8 +500,6 @@ async function darwDonutChart(filenameDonut) {
     const donutGroup = donutSvg.append('g')
         .attr('id', 'donutchart')
         .attr("transform", `translate(${width / 2}, ${height / 2})`);
-
-    console.log(width / 2, height / 2)
 
     const donutTooltip = d3.select('#sumup')
         .append('div')

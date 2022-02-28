@@ -87,7 +87,7 @@ function donutChart(selection, data, widthDonutChart, heightDonutChart, palette)
     .style("opacity", 0.7)
     .on("mouseover", mouseover)
     .on("mousemove", mousemove)
-    .on("mouseleave", mouseleave)
+    // .on("mouseleave", mouseleave)
     .transition()
     .duration(1500)
     .attrTween("d", d => {

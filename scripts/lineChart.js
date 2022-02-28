@@ -1,9 +1,11 @@
 
-function lineChart(selection, data, widthLineChart, heightLineChart) {
+function lineChart(selection, data, widthLineChart, heightLineChart, palette) {
     //Data Accessor
     const parseDate = d3.timeParse('%Y');
     const xAccessor = d => parseDate(d.year)
     const yAccessor = d => parseInt(d.sales)
+    const gameAccessor = d => (d.Name)
+    const salesAccessor = d => parseInt(d.Global_Sales)
 
     const yScale = d3.scaleLinear()
         .domain(d3.extent(data, yAccessor))
@@ -43,6 +45,34 @@ function lineChart(selection, data, widthLineChart, heightLineChart) {
     //         .tickFormat("")
     //     )
 
+
+    // create tooltip element 
+    const tooltip = d3.select('#bubbleTooltip')
+
+    // Three function that change the tooltip when user hover / move / leave a cell
+    const mouseover = function (event, d) {
+        const gameName = gameAccessor(d);
+        const sales = salesAccessor(d);
+        tooltip
+            .html(gameName + "<br>" + "Profit: " + sales + 'Mln $')
+            .style('font-family', 'Quicksand, sans-serif')
+            .style('font-size', 4)
+            .style("text-align", "center")
+            .style("opacity", 1)
+
+    }
+    const mousemove = function (event, d) {
+        var xPos = xScale(xAccessor(d));
+        var yPos = yScale(salesAccessor(d));
+        tooltip.style("transform", "translateY(-55%)")
+            .style("left", (xPos) + 'px')
+            .style("top", (yPos) + 'px')
+    }
+    const mouseleave = function (event, d) {
+        tooltip
+            .style("opacity", 0)
+    }
+
     var line = d3.line()
         .x(d => xScale(xAccessor(d)))
         .y(d => yScale(yAccessor(d)))
@@ -59,21 +89,31 @@ function lineChart(selection, data, widthLineChart, heightLineChart) {
         .attr("stroke", "#005F73")
         .attr("stroke-width", 3)
 
-    // Get the length of the path, which we will use for the intial offset to "hide"
-    // the graph
-    // const length = path.node().getTotalLength();
+    const radius = 4
+    var gameGroup = selection.selectAll('.mostSoldGames')
+    gameGroup.data(data)
+        .join('circle')
+        .attr("class", "mostSoldGames")
+        .on("mouseover", mouseover)
+        .on("mousemove", mousemove)
+        .on("mouseleave", mouseleave)
+        .transition()
+        .attr('r', radius)
+        .attr('cy', d => yScale(salesAccessor(d)))
+        .attr('cx', d => xScale(xAccessor(d)))
+        .attr('fill', palette)
+        .attr("stroke", "black");
 
-    // function repeat() {
-    //     // Animate the path by setting the initial offset and dasharray and then transition the offset to 0
-    //     path.attr("stroke-dasharray", length + " " + length)
-    //         .attr("stroke-dashoffset", length)
-    //         .transition()
-    //         .ease(d3.easeLinear)
-    //         .attr("stroke-dashoffset", 0)
-    //         .duration(2000);
-    // };
-
-    // repeat();
+    var lineGroup = selection.selectAll('.lineGames')
+    lineGroup.data(data)
+        .join('line')
+        .attr("class", "lineGames")
+        .transition()
+        .attr("x1", d => xScale(xAccessor(d)))
+        .attr("x2", d => xScale(xAccessor(d)))
+        .attr("y1", d => yScale(salesAccessor(d)))
+        .attr("y2", yScale(0))
+        .attr("stroke", "grey")
 
     return selection;
 }

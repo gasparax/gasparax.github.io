@@ -4,6 +4,7 @@ Lib/
 .idea
 .ipynb_checkpoints
 .Lib
+.vscode
 pyvenv.cfg
 example/
 index2.html
