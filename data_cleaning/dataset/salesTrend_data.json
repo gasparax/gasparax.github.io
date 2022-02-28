@@ -4,151 +4,225 @@
         "production": [
             {
                 "year": 1980.0,
-                "sales": 0.34
+                "sales": 0.34,
+                "Name": "Freeway",
+                "Global_Sales": 0.34
             },
             {
                 "year": 1981.0,
-                "sales": 14.84
+                "sales": 14.840000000000002,
+                "Name": "Frogger",
+                "Global_Sales": 2.2
             },
             {
                 "year": 1982.0,
-                "sales": 6.52
+                "sales": 6.52,
+                "Name": "Keystone Kapers",
+                "Global_Sales": 0.66
             },
             {
                 "year": 1983.0,
-                "sales": 2.86
+                "sales": 2.8600000000000003,
+                "Name": "Crystal Castles",
+                "Global_Sales": 0.77
             },
             {
                 "year": 1984.0,
-                "sales": 1.85
+                "sales": 1.85,
+                "Name": "Pinball",
+                "Global_Sales": 1.85
             },
             {
                 "year": 1985.0,
-                "sales": 3.52
+                "sales": 3.52,
+                "Name": "Kung Fu",
+                "Global_Sales": 3.5
             },
             {
                 "year": 1986.0,
-                "sales": 13.740000000000002
+                "sales": 13.740000000000002,
+                "Name": "The Legend of Zelda",
+                "Global_Sales": 6.51
             },
             {
                 "year": 1987.0,
-                "sales": 1.12
+                "sales": 1.12,
+                "Name": "Kung-Fu Master",
+                "Global_Sales": 0.65
             },
             {
                 "year": 1988.0,
-                "sales": 1.75
+                "sales": 1.75,
+                "Name": "Mega Man 2",
+                "Global_Sales": 1.51
             },
             {
                 "year": 1989.0,
-                "sales": 4.64
+                "sales": 4.64,
+                "Name": "Teenage Mutant Ninja Turtles",
+                "Global_Sales": 4.17
             },
             {
                 "year": 1990.0,
-                "sales": 6.390000000000001
+                "sales": 6.390000000000001,
+                "Name": "Streets of Rage",
+                "Global_Sales": 2.6
             },
             {
                 "year": 1991.0,
-                "sales": 6.76
+                "sales": 6.76,
+                "Name": "The Legend of Zelda: A Link to the Past",
+                "Global_Sales": 4.61
             },
             {
                 "year": 1992.0,
-                "sales": 3.83
+                "sales": 3.83,
+                "Name": "The Legend of Zelda: Link's Awakening",
+                "Global_Sales": 3.83
             },
             {
                 "year": 1993.0,
-                "sales": 1.81
+                "sales": 1.81,
+                "Name": "Final Fight 2",
+                "Global_Sales": 1.02
             },
             {
                 "year": 1994.0,
-                "sales": 1.55
+                "sales": 1.5499999999999998,
+                "Name": "Super Metroid",
+                "Global_Sales": 1.42
             },
             {
                 "year": 1995.0,
-                "sales": 3.5700000000000007
+                "sales": 3.5700000000000007,
+                "Name": "Twisted Metal",
+                "Global_Sales": 1.56
             },
             {
                 "year": 1996.0,
-                "sales": 20.580000000000005
+                "sales": 20.580000000000002,
+                "Name": "Resident Evil",
+                "Global_Sales": 5.05
             },
             {
                 "year": 1997.0,
-                "sales": 27.580000000000002
+                "sales": 27.58,
+                "Name": "Tomb Raider II",
+                "Global_Sales": 5.24
             },
             {
                 "year": 1998.0,
-                "sales": 39.440000000000005
+                "sales": 39.440000000000005,
+                "Name": "The Legend of Zelda: Ocarina of Time",
+                "Global_Sales": 7.6
             },
             {
                 "year": 1999.0,
-                "sales": 27.91999999999999
+                "sales": 27.92,
+                "Name": "Driver",
+                "Global_Sales": 6.27
             },
             {
                 "year": 2000.0,
-                "sales": 34.04000000000002
+                "sales": 34.04000000000002,
+                "Name": "Driver 2",
+                "Global_Sales": 4.73
             },
             {
                 "year": 2001.0,
-                "sales": 59.39000000000001
+                "sales": 59.39000000000001,
+                "Name": "Grand Theft Auto III",
+                "Global_Sales": 13.1
             },
             {
                 "year": 2002.0,
-                "sales": 87.55999999999993
+                "sales": 87.55999999999996,
+                "Name": "Grand Theft Auto: Vice City",
+                "Global_Sales": 16.15
             },
             {
                 "year": 2003.0,
-                "sales": 67.96
+                "sales": 67.96000000000001,
+                "Name": "The Lord of the Rings: The Return of the King",
+                "Global_Sales": 3.28
             },
             {
                 "year": 2004.0,
-                "sales": 76.25999999999998
+                "sales": 76.25999999999993,
+                "Name": "Grand Theft Auto: San Andreas",
+                "Global_Sales": 20.81
             },
             {
                 "year": 2005.0,
-                "sales": 86.64000000000007
+                "sales": 86.6400000000001,
+                "Name": "Grand Theft Auto: Liberty City Stories",
+                "Global_Sales": 7.72
             },
             {
                 "year": 2006.0,
-                "sales": 67.03999999999998
+                "sales": 67.03999999999998,
+                "Name": "The Legend of Zelda: Twilight Princess",
+                "Global_Sales": 7.31
             },
             {
                 "year": 2007.0,
-                "sales": 107.78000000000004
+                "sales": 107.78000000000009,
+                "Name": "LEGO Star Wars: The Complete Saga",
+                "Global_Sales": 5.83
             },
             {
                 "year": 2008.0,
-                "sales": 143.27000000000004
+                "sales": 143.2700000000001,
+                "Name": "Grand Theft Auto IV",
+                "Global_Sales": 11.02
             },
             {
                 "year": 2009.0,
-                "sales": 139.3600000000001
+                "sales": 139.36000000000018,
+                "Name": "Pokemon HeartGold/Pokemon SoulSilver",
+                "Global_Sales": 11.9
             },
             {
                 "year": 2010.0,
-                "sales": 117.80999999999997
+                "sales": 117.81,
+                "Name": "Red Dead Redemption",
+                "Global_Sales": 6.6
             },
             {
                 "year": 2011.0,
-                "sales": 121.2
+                "sales": 121.20000000000002,
+                "Name": "Uncharted 3: Drake's Deception",
+                "Global_Sales": 6.83
             },
             {
                 "year": 2012.0,
-                "sales": 126.96999999999989
+                "sales": 126.96999999999991,
+                "Name": "FIFA Soccer 13",
+                "Global_Sales": 8.24
             },
             {
                 "year": 2013.0,
-                "sales": 125.5
+                "sales": 125.49999999999996,
+                "Name": "Grand Theft Auto V",
+                "Global_Sales": 21.4
             },
             {
                 "year": 2014.0,
-                "sales": 99.02000000000008
+                "sales": 99.02000000000002,
+                "Name": "Grand Theft Auto V",
+                "Global_Sales": 11.98
             },
             {
                 "year": 2015.0,
-                "sales": 70.69999999999996
+                "sales": 70.70000000000002,
+                "Name": "Uncharted: The Nathan Drake Collection",
+                "Global_Sales": 4.47
             },
             {
                 "year": 2016.0,
-                "sales": 19.910000000000025
+                "sales": 19.90999999999999,
+                "Name": "Far Cry: Primal",
+                "Global_Sales": 2.13
             }
         ]
     },
@@ -157,115 +231,171 @@
         "production": [
             {
                 "year": 1983.0,
-                "sales": 0.4
+                "sales": 0.4,
+                "Name": "Pengo",
+                "Global_Sales": 0.4
             },
             {
                 "year": 1987.0,
-                "sales": 4.38
+                "sales": 4.38,
+                "Name": "Zelda II: The Adventure of Link",
+                "Global_Sales": 4.38
             },
             {
                 "year": 1991.0,
-                "sales": 2.24
+                "sales": 2.24,
+                "Name": "Metroid II: Return of Samus",
+                "Global_Sales": 1.76
             },
             {
                 "year": 1992.0,
-                "sales": 12.239999999999998
+                "sales": 12.24,
+                "Name": "Super Mario Land 2: 6 Golden Coins",
+                "Global_Sales": 11.18
             },
             {
                 "year": 1993.0,
-                "sales": 0.07
+                "sales": 0.07,
+                "Name": "Ecco: The Tides of Time",
+                "Global_Sales": 0.07
             },
             {
                 "year": 1994.0,
-                "sales": 3.74
+                "sales": 3.74,
+                "Name": "Myst",
+                "Global_Sales": 2.81
             },
             {
                 "year": 1995.0,
-                "sales": 0.7200000000000002
+                "sales": 0.7200000000000002,
+                "Name": "Doukyuusei",
+                "Global_Sales": 0.14
             },
             {
                 "year": 1996.0,
-                "sales": 4.1899999999999995
+                "sales": 4.19,
+                "Name": "Casper",
+                "Global_Sales": 0.83
             },
             {
                 "year": 1997.0,
-                "sales": 4.96
+                "sales": 4.96,
+                "Name": "Riven: The Sequel to Myst",
+                "Global_Sales": 2.43
             },
             {
                 "year": 1998.0,
-                "sales": 9.049999999999995
+                "sales": 9.05,
+                "Name": "Rugrats: Search For Reptar",
+                "Global_Sales": 3.34
             },
             {
                 "year": 1999.0,
-                "sales": 7.599999999999999
+                "sales": 7.599999999999999,
+                "Name": "Star Wars Episode I: The Phantom Menace",
+                "Global_Sales": 1.74
             },
             {
                 "year": 2000.0,
-                "sales": 2.98
+                "sales": 2.98,
+                "Name": "Mary-Kate and Ashley: Magical Mystery Mall",
+                "Global_Sales": 0.65
             },
             {
                 "year": 2001.0,
-                "sales": 9.12
+                "sales": 9.12,
+                "Name": "Scooby Doo and the Cyber Chase",
+                "Global_Sales": 1.94
             },
             {
                 "year": 2002.0,
-                "sales": 11.050000000000002
+                "sales": 11.049999999999999,
+                "Name": "Onimusha 2: Samurai's Destiny",
+                "Global_Sales": 2.25
             },
             {
                 "year": 2003.0,
-                "sales": 2.1399999999999997
+                "sales": 2.14,
+                "Name": "Dog's Life",
+                "Global_Sales": 0.42
             },
             {
                 "year": 2004.0,
-                "sales": 8.7
+                "sales": 8.699999999999998,
+                "Name": "Classic NES Series: The Legend of Zelda",
+                "Global_Sales": 0.89
             },
             {
                 "year": 2005.0,
-                "sales": 8.530000000000001
+                "sales": 8.53,
+                "Name": "Phoenix Wright: Ace Attorney",
+                "Global_Sales": 0.99
             },
             {
                 "year": 2006.0,
-                "sales": 11.469999999999986
+                "sales": 11.47,
+                "Name": "Bratz: Forever Diamondz",
+                "Global_Sales": 1.48
             },
             {
                 "year": 2007.0,
-                "sales": 24.470000000000027
+                "sales": 24.470000000000013,
+                "Name": "Assassin's Creed",
+                "Global_Sales": 5.55
             },
             {
                 "year": 2008.0,
-                "sales": 25.020000000000028
+                "sales": 25.019999999999996,
+                "Name": "Club Penguin: Elite Penguin Force",
+                "Global_Sales": 3.16
             },
             {
                 "year": 2009.0,
-                "sales": 20.70000000000003
+                "sales": 20.70000000000001,
+                "Name": "Pok\u00e9Park Wii: Pikachu's Adventure",
+                "Global_Sales": 1.2
             },
             {
                 "year": 2010.0,
-                "sales": 16.570000000000004
+                "sales": 16.569999999999983,
+                "Name": "Heavy Rain",
+                "Global_Sales": 3.12
             },
             {
                 "year": 2011.0,
-                "sales": 15.979999999999977
+                "sales": 15.979999999999983,
+                "Name": "L.A. Noire",
+                "Global_Sales": 3.23
             },
             {
                 "year": 2012.0,
-                "sales": 5.989999999999999
+                "sales": 5.989999999999998,
+                "Name": "The Walking Dead: Season One",
+                "Global_Sales": 0.79
             },
             {
                 "year": 2013.0,
-                "sales": 6.609999999999992
+                "sales": 6.609999999999992,
+                "Name": "Beyond: Two Souls",
+                "Global_Sales": 1.79
             },
             {
                 "year": 2014.0,
-                "sales": 6.0599999999999925
+                "sales": 6.0599999999999925,
+                "Name": "The Walking Dead: Season One",
+                "Global_Sales": 0.45
             },
             {
                 "year": 2015.0,
-                "sales": 8.029999999999996
+                "sales": 8.029999999999996,
+                "Name": "Until Dawn",
+                "Global_Sales": 1.64
             },
             {
                 "year": 2016.0,
-                "sales": 1.8100000000000007
+                "sales": 1.8100000000000005,
+                "Name": "Life is Strange",
+                "Global_Sales": 0.37
             }
         ]
     },
@@ -274,119 +404,177 @@
         "production": [
             {
                 "year": 1980.0,
-                "sales": 0.77
+                "sales": 0.77,
+                "Name": "Boxing",
+                "Global_Sales": 0.77
             },
             {
                 "year": 1985.0,
-                "sales": 1.05
+                "sales": 1.05,
+                "Name": "Tag Team Match M.U.S.C.L.E.",
+                "Global_Sales": 1.05
             },
             {
                 "year": 1987.0,
-                "sales": 5.42
+                "sales": 5.42,
+                "Name": "Mike Tyson's Punch-Out!!",
+                "Global_Sales": 3.02
             },
             {
                 "year": 1991.0,
-                "sales": 0.39
+                "sales": 0.39,
+                "Name": "Super Fire ProWrestling",
+                "Global_Sales": 0.39
             },
             {
                 "year": 1992.0,
-                "sales": 15.25
+                "sales": 15.25,
+                "Name": "Street Fighter II: The World Warrior",
+                "Global_Sales": 6.3
             },
             {
                 "year": 1993.0,
-                "sales": 8.750000000000002
+                "sales": 8.750000000000002,
+                "Name": "Super Street Fighter II",
+                "Global_Sales": 2.0
             },
             {
                 "year": 1994.0,
-                "sales": 8.47
+                "sales": 8.469999999999999,
+                "Name": "Mortal Kombat 3",
+                "Global_Sales": 1.53
             },
             {
                 "year": 1995.0,
-                "sales": 14.85
+                "sales": 14.849999999999998,
+                "Name": "Tekken",
+                "Global_Sales": 3.24
             },
             {
                 "year": 1996.0,
-                "sales": 18.06000000000001
+                "sales": 18.060000000000002,
+                "Name": "Tekken 2",
+                "Global_Sales": 5.74
             },
             {
                 "year": 1997.0,
-                "sales": 11.76
+                "sales": 11.760000000000002,
+                "Name": "WCW vs. nWo: World Tour",
+                "Global_Sales": 1.69
             },
             {
                 "year": 1998.0,
-                "sales": 31.660000000000018
+                "sales": 31.66000000000001,
+                "Name": "Tekken 3",
+                "Global_Sales": 7.16
             },
             {
                 "year": 1999.0,
-                "sales": 14.259999999999994
+                "sales": 14.259999999999998,
+                "Name": "Super Smash Bros.",
+                "Global_Sales": 5.55
             },
             {
                 "year": 2000.0,
-                "sales": 20.22
+                "sales": 20.220000000000002,
+                "Name": "Tekken Tag Tournament",
+                "Global_Sales": 4.05
             },
             {
                 "year": 2001.0,
-                "sales": 18.12
+                "sales": 18.12,
+                "Name": "Super Smash Bros. Melee",
+                "Global_Sales": 7.07
             },
             {
                 "year": 2002.0,
-                "sales": 25.140000000000004
+                "sales": 25.14,
+                "Name": "Tekken 4",
+                "Global_Sales": 3.44
             },
             {
                 "year": 2003.0,
-                "sales": 23.730000000000004
+                "sales": 23.73,
+                "Name": "WWE SmackDown! Here Comes the Pain",
+                "Global_Sales": 2.8
             },
             {
                 "year": 2004.0,
-                "sales": 17.32
+                "sales": 17.32,
+                "Name": "Dragon Ball Z: Budokai 3",
+                "Global_Sales": 1.94
             },
             {
                 "year": 2005.0,
-                "sales": 19.71999999999999
+                "sales": 19.71999999999999,
+                "Name": "Tekken 5",
+                "Global_Sales": 3.87
             },
             {
                 "year": 2006.0,
-                "sales": 22.55
+                "sales": 22.549999999999997,
+                "Name": "Pac-Man: Adventures in Time",
+                "Global_Sales": 2.63
             },
             {
                 "year": 2007.0,
-                "sales": 17.609999999999996
+                "sales": 17.609999999999996,
+                "Name": "Dragon Ball Z: Budokai Tenkaichi 3",
+                "Global_Sales": 3.0
             },
             {
                 "year": 2008.0,
-                "sales": 35.46999999999999
+                "sales": 35.46999999999999,
+                "Name": "Super Smash Bros. Brawl",
+                "Global_Sales": 13.04
             },
             {
                 "year": 2009.0,
-                "sales": 32.27999999999999
+                "sales": 32.280000000000015,
+                "Name": "Street Fighter IV",
+                "Global_Sales": 4.19
             },
             {
                 "year": 2010.0,
-                "sales": 14.890000000000002
+                "sales": 14.889999999999999,
+                "Name": "UFC Undisputed 2010",
+                "Global_Sales": 1.42
             },
             {
                 "year": 2011.0,
-                "sales": 22.68
+                "sales": 22.679999999999993,
+                "Name": "Mortal Kombat",
+                "Global_Sales": 2.85
             },
             {
                 "year": 2012.0,
-                "sales": 9.51
+                "sales": 9.51,
+                "Name": "Tekken Tag Tournament 2",
+                "Global_Sales": 0.88
             },
             {
                 "year": 2013.0,
-                "sales": 7.21
+                "sales": 7.21,
+                "Name": "Injustice: Gods Among Us",
+                "Global_Sales": 1.41
             },
             {
                 "year": 2014.0,
-                "sales": 16.15
+                "sales": 16.150000000000002,
+                "Name": "Super Smash Bros. for Wii U and 3DS",
+                "Global_Sales": 7.45
             },
             {
                 "year": 2015.0,
-                "sales": 7.78
+                "sales": 7.780000000000001,
+                "Name": "Mortal Kombat X",
+                "Global_Sales": 2.7
             },
             {
                 "year": 2016.0,
-                "sales": 3.859999999999999
+                "sales": 3.8599999999999994,
+                "Name": "Naruto Shippuden: Ultimate Ninja Storm 4",
+                "Global_Sales": 1.06
             }
         ]
     },
@@ -395,127 +583,189 @@
         "production": [
             {
                 "year": 1980.0,
-                "sales": 2.71
+                "sales": 2.71,
+                "Name": "Kaboom!",
+                "Global_Sales": 1.15
             },
             {
                 "year": 1982.0,
-                "sales": 0.87
+                "sales": 0.87,
+                "Name": "Enduro",
+                "Global_Sales": 0.87
             },
             {
                 "year": 1983.0,
-                "sales": 2.14
+                "sales": 2.14,
+                "Name": "Mahjong",
+                "Global_Sales": 2.14
             },
             {
                 "year": 1984.0,
-                "sales": 1.45
+                "sales": 1.45,
+                "Name": "4 Nin uchi Mahjong",
+                "Global_Sales": 1.45
             },
             {
                 "year": 1989.0,
-                "sales": 1.28
+                "sales": 1.28,
+                "Name": "Yakuman",
+                "Global_Sales": 1.28
             },
             {
                 "year": 1991.0,
-                "sales": 0.08
+                "sales": 0.08,
+                "Name": "Chibi Maruko-Chan: Harikiri 365-Nichi no Maki",
+                "Global_Sales": 0.08
             },
             {
                 "year": 1992.0,
-                "sales": 4.9399999999999995
+                "sales": 4.9399999999999995,
+                "Name": "Mario Paint",
+                "Global_Sales": 2.75
             },
             {
                 "year": 1993.0,
-                "sales": 0.3
+                "sales": 0.3,
+                "Name": "Jissen Pachi-Slot Hisshouhou",
+                "Global_Sales": 0.19
             },
             {
                 "year": 1994.0,
-                "sales": 2.8599999999999994
+                "sales": 2.8599999999999994,
+                "Name": "Monopoly",
+                "Global_Sales": 2.39
             },
             {
                 "year": 1995.0,
-                "sales": 6.4
+                "sales": 6.400000000000001,
+                "Name": "Namco Museum Vol.1",
+                "Global_Sales": 3.84
             },
             {
                 "year": 1996.0,
-                "sales": 10.679999999999994
+                "sales": 10.679999999999998,
+                "Name": "Namco Museum Vol.3",
+                "Global_Sales": 4.05
             },
             {
                 "year": 1997.0,
-                "sales": 5.6899999999999995
+                "sales": 5.69,
+                "Name": "Monopoly",
+                "Global_Sales": 1.51
             },
             {
                 "year": 1998.0,
-                "sales": 11.940000000000003
+                "sales": 11.940000000000001,
+                "Name": "Mario Party",
+                "Global_Sales": 2.7
             },
             {
                 "year": 1999.0,
-                "sales": 20.649999999999995
+                "sales": 20.65,
+                "Name": "Pokemon Pinball",
+                "Global_Sales": 5.31
             },
             {
                 "year": 2000.0,
-                "sales": 15.54
+                "sales": 15.54,
+                "Name": "Crash Bash",
+                "Global_Sales": 3.39
             },
             {
                 "year": 2001.0,
-                "sales": 16.680000000000003
+                "sales": 16.680000000000003,
+                "Name": "Namco Museum",
+                "Global_Sales": 4.24
             },
             {
                 "year": 2002.0,
-                "sales": 15.669999999999998
+                "sales": 15.670000000000002,
+                "Name": "Mario Party 4",
+                "Global_Sales": 2.47
             },
             {
                 "year": 2003.0,
-                "sales": 23.82
+                "sales": 23.819999999999997,
+                "Name": "EyeToy Play",
+                "Global_Sales": 4.2
             },
             {
                 "year": 2004.0,
-                "sales": 31.319999999999993
+                "sales": 31.319999999999993,
+                "Name": "Sonic Mega Collection Plus",
+                "Global_Sales": 2.9
             },
             {
                 "year": 2005.0,
-                "sales": 61.24
+                "sales": 61.240000000000016,
+                "Name": "Brain Age: Train Your Brain in Minutes a Day",
+                "Global_Sales": 20.22
             },
             {
                 "year": 2006.0,
-                "sales": 67.58999999999995
+                "sales": 67.58999999999999,
+                "Name": "Wii Play",
+                "Global_Sales": 29.02
             },
             {
                 "year": 2007.0,
-                "sales": 92.27
+                "sales": 92.27000000000001,
+                "Name": "Mario Party DS",
+                "Global_Sales": 9.02
             },
             {
                 "year": 2008.0,
-                "sales": 88.28000000000006
+                "sales": 88.28000000000004,
+                "Name": "Guitar Hero: World Tour",
+                "Global_Sales": 3.65
             },
             {
                 "year": 2009.0,
-                "sales": 76.94000000000001
+                "sales": 76.94000000000005,
+                "Name": "Just Dance",
+                "Global_Sales": 7.27
             },
             {
                 "year": 2010.0,
-                "sales": 96.86000000000001
+                "sales": 96.86000000000004,
+                "Name": "Kinect Adventures!",
+                "Global_Sales": 21.82
             },
             {
                 "year": 2011.0,
-                "sales": 56.379999999999995
+                "sales": 56.38000000000003,
+                "Name": "Just Dance 3",
+                "Global_Sales": 10.26
             },
             {
                 "year": 2012.0,
-                "sales": 22.920000000000012
+                "sales": 22.920000000000005,
+                "Name": "Just Dance 4",
+                "Global_Sales": 6.91
             },
             {
                 "year": 2013.0,
-                "sales": 25.889999999999997
+                "sales": 25.89,
+                "Name": "Minecraft",
+                "Global_Sales": 9.2
             },
             {
                 "year": 2014.0,
-                "sales": 23.68000000000001
+                "sales": 23.68000000000001,
+                "Name": "Minecraft",
+                "Global_Sales": 5.42
             },
             {
                 "year": 2015.0,
-                "sales": 11.689999999999998
+                "sales": 11.69,
+                "Name": "Mario Party 10",
+                "Global_Sales": 1.55
             },
             {
                 "year": 2016.0,
-                "sales": 1.1700000000000004
+                "sales": 1.1700000000000004,
+                "Name": "Minecraft",
+                "Global_Sales": 0.43
             }
         ]
     },
@@ -524,147 +774,219 @@
         "production": [
             {
                 "year": 1981.0,
-                "sales": 6.93
+                "sales": 6.93,
+                "Name": "Pitfall!",
+                "Global_Sales": 4.5
             },
             {
                 "year": 1982.0,
-                "sales": 5.03
+                "sales": 5.03,
+                "Name": "Mario Bros.",
+                "Global_Sales": 1.59
             },
             {
                 "year": 1983.0,
-                "sales": 6.93
+                "sales": 6.930000000000001,
+                "Name": "Mario Bros.",
+                "Global_Sales": 2.28
             },
             {
                 "year": 1984.0,
-                "sales": 0.69
+                "sales": 0.69,
+                "Name": "Mappy",
+                "Global_Sales": 0.69
             },
             {
                 "year": 1985.0,
-                "sales": 43.17
+                "sales": 43.17,
+                "Name": "Super Mario Bros.",
+                "Global_Sales": 40.24
             },
             {
                 "year": 1986.0,
-                "sales": 9.39
+                "sales": 9.39,
+                "Name": "Super Mario Bros.: The Lost Levels",
+                "Global_Sales": 2.65
             },
             {
                 "year": 1987.0,
-                "sales": 1.7400000000000002
+                "sales": 1.7400000000000002,
+                "Name": "Castlevania II: Simon's Quest",
+                "Global_Sales": 0.93
             },
             {
                 "year": 1988.0,
-                "sales": 27.73
+                "sales": 27.73,
+                "Name": "Super Mario Bros. 3",
+                "Global_Sales": 17.28
             },
             {
                 "year": 1989.0,
-                "sales": 20.660000000000004
+                "sales": 20.660000000000004,
+                "Name": "Super Mario Land",
+                "Global_Sales": 18.14
             },
             {
                 "year": 1990.0,
-                "sales": 22.97
+                "sales": 22.97,
+                "Name": "Super Mario World",
+                "Global_Sales": 20.61
             },
             {
                 "year": 1991.0,
-                "sales": 7.64
+                "sales": 7.64,
+                "Name": "Sonic the Hedgehog",
+                "Global_Sales": 4.34
             },
             {
                 "year": 1992.0,
-                "sales": 13.42
+                "sales": 13.419999999999998,
+                "Name": "Sonic the Hedgehog 2",
+                "Global_Sales": 6.03
             },
             {
                 "year": 1993.0,
-                "sales": 18.669999999999998
+                "sales": 18.67,
+                "Name": "Super Mario All-Stars",
+                "Global_Sales": 10.55
             },
             {
                 "year": 1994.0,
-                "sales": 28.740000000000002
+                "sales": 28.740000000000002,
+                "Name": "Donkey Kong Country",
+                "Global_Sales": 9.3
             },
             {
                 "year": 1995.0,
-                "sales": 16.689999999999998
+                "sales": 16.69,
+                "Name": "Donkey Kong Country 2: Diddy's Kong Quest",
+                "Global_Sales": 5.15
             },
             {
                 "year": 1996.0,
-                "sales": 28.23
+                "sales": 28.23,
+                "Name": "Super Mario 64",
+                "Global_Sales": 11.89
             },
             {
                 "year": 1997.0,
-                "sales": 21.849999999999998
+                "sales": 21.85,
+                "Name": "Crash Bandicoot 2: Cortex Strikes Back",
+                "Global_Sales": 7.58
             },
             {
                 "year": 1998.0,
-                "sales": 29.879999999999992
+                "sales": 29.879999999999992,
+                "Name": "Crash Bandicoot 3: Warped",
+                "Global_Sales": 7.13
             },
             {
                 "year": 1999.0,
-                "sales": 20.82
+                "sales": 20.82,
+                "Name": "Donkey Kong 64",
+                "Global_Sales": 5.27
             },
             {
                 "year": 2000.0,
-                "sales": 16.06
+                "sales": 16.06,
+                "Name": "Spyro: Year of the Dragon",
+                "Global_Sales": 3.71
             },
             {
                 "year": 2001.0,
-                "sales": 39.28
+                "sales": 39.28000000000001,
+                "Name": "Super Mario Advance",
+                "Global_Sales": 5.49
             },
             {
                 "year": 2002.0,
-                "sales": 45.970000000000006
+                "sales": 45.96999999999999,
+                "Name": "Super Mario Sunshine",
+                "Global_Sales": 6.31
             },
             {
                 "year": 2003.0,
-                "sales": 42.89
+                "sales": 42.89000000000001,
+                "Name": "Super Mario Bros. 3",
+                "Global_Sales": 5.2
             },
             {
                 "year": 2004.0,
-                "sales": 47.34000000000001
+                "sales": 47.34000000000001,
+                "Name": "Super Mario 64",
+                "Global_Sales": 10.42
             },
             {
                 "year": 2005.0,
-                "sales": 23.56
+                "sales": 23.56,
+                "Name": "Sonic Rush",
+                "Global_Sales": 3.15
             },
             {
                 "year": 2006.0,
-                "sales": 49.800000000000004
+                "sales": 49.8,
+                "Name": "New Super Mario Bros.",
+                "Global_Sales": 30.01
             },
             {
                 "year": 2007.0,
-                "sales": 35.59
+                "sales": 35.589999999999996,
+                "Name": "Super Mario Galaxy",
+                "Global_Sales": 11.52
             },
             {
                 "year": 2008.0,
-                "sales": 35.70000000000002
+                "sales": 35.7,
+                "Name": "LittleBigPlanet",
+                "Global_Sales": 5.92
             },
             {
                 "year": 2009.0,
-                "sales": 41.09000000000001
+                "sales": 41.09,
+                "Name": "New Super Mario Bros. Wii",
+                "Global_Sales": 28.62
             },
             {
                 "year": 2010.0,
-                "sales": 31.900000000000002
+                "sales": 31.899999999999995,
+                "Name": "Super Mario Galaxy 2",
+                "Global_Sales": 7.69
             },
             {
                 "year": 2011.0,
-                "sales": 28.109999999999992
+                "sales": 28.10999999999999,
+                "Name": "Super Mario 3D Land",
+                "Global_Sales": 10.79
             },
             {
                 "year": 2012.0,
-                "sales": 18.549999999999997
+                "sales": 18.55,
+                "Name": "New Super Mario Bros. 2",
+                "Global_Sales": 9.82
             },
             {
                 "year": 2013.0,
-                "sales": 25.12
+                "sales": 25.120000000000008,
+                "Name": "Super Mario 3D World",
+                "Global_Sales": 4.25
             },
             {
                 "year": 2014.0,
-                "sales": 8.89
+                "sales": 8.89,
+                "Name": "LittleBigPlanet 3",
+                "Global_Sales": 1.86
             },
             {
                 "year": 2015.0,
-                "sales": 6.050000000000002
+                "sales": 6.049999999999999,
+                "Name": "Super Mario Maker",
+                "Global_Sales": 3.18
             },
             {
                 "year": 2016.0,
-                "sales": 2.0699999999999994
+                "sales": 2.0700000000000003,
+                "Name": "Ratchet & Clank (2016)",
+                "Global_Sales": 1.17
             }
         ]
     },
@@ -673,135 +995,201 @@
         "production": [
             {
                 "year": 1981.0,
-                "sales": 2.2399999999999998
+                "sales": 2.2399999999999998,
+                "Name": "Ms. Pac-Man",
+                "Global_Sales": 1.65
             },
             {
                 "year": 1982.0,
-                "sales": 10.03
+                "sales": 10.03,
+                "Name": "Pac-Man",
+                "Global_Sales": 7.81
             },
             {
                 "year": 1983.0,
-                "sales": 0.78
+                "sales": 0.78,
+                "Name": "Jr. Pac-Man",
+                "Global_Sales": 0.78
             },
             {
                 "year": 1984.0,
-                "sales": 3.14
+                "sales": 3.14,
+                "Name": "Pac-Man",
+                "Global_Sales": 1.22
             },
             {
                 "year": 1985.0,
-                "sales": 3.2100000000000004
+                "sales": 3.21,
+                "Name": "Gyromite",
+                "Global_Sales": 1.32
             },
             {
                 "year": 1988.0,
-                "sales": 5.58
+                "sales": 5.58,
+                "Name": "Tetris",
+                "Global_Sales": 5.58
             },
             {
                 "year": 1989.0,
-                "sales": 37.75
+                "sales": 37.75,
+                "Name": "Tetris",
+                "Global_Sales": 30.26
             },
             {
                 "year": 1990.0,
-                "sales": 6.0
+                "sales": 6.0,
+                "Name": "Dr. Mario",
+                "Global_Sales": 4.85
             },
             {
                 "year": 1991.0,
-                "sales": 3.2399999999999998
+                "sales": 3.2399999999999998,
+                "Name": "Yoshi",
+                "Global_Sales": 1.75
             },
             {
                 "year": 1992.0,
-                "sales": 4.840000000000001
+                "sales": 4.84,
+                "Name": "Yoshi's Cookie",
+                "Global_Sales": 1.68
             },
             {
                 "year": 1993.0,
-                "sales": 3.17
+                "sales": 3.17,
+                "Name": "Super Puyo Puyo",
+                "Global_Sales": 1.7
             },
             {
                 "year": 1994.0,
-                "sales": 1.53
+                "sales": 1.53,
+                "Name": "Super Bomberman 2",
+                "Global_Sales": 0.81
             },
             {
                 "year": 1995.0,
-                "sales": 2.7099999999999995
+                "sales": 2.7100000000000004,
+                "Name": "Mario's Picross",
+                "Global_Sales": 0.62
             },
             {
                 "year": 1996.0,
-                "sales": 3.91
+                "sales": 3.9099999999999997,
+                "Name": "Tetris Plus",
+                "Global_Sales": 2.4
             },
             {
                 "year": 1997.0,
-                "sales": 5.890000000000001
+                "sales": 5.89,
+                "Name": "Intelligent Qube",
+                "Global_Sales": 1.22
             },
             {
                 "year": 1998.0,
-                "sales": 6.339999999999999
+                "sales": 6.339999999999999,
+                "Name": "Tetris DX",
+                "Global_Sales": 1.93
             },
             {
                 "year": 1999.0,
-                "sales": 1.36
+                "sales": 1.36,
+                "Name": "Q*bert",
+                "Global_Sales": 0.84
             },
             {
                 "year": 2000.0,
-                "sales": 3.82
+                "sales": 3.8200000000000003,
+                "Name": "Kirby Tilt 'n' Tumble",
+                "Global_Sales": 1.23
             },
             {
                 "year": 2001.0,
-                "sales": 7.999999999999998
+                "sales": 8.0,
+                "Name": "Pac-Man Collection",
+                "Global_Sales": 2.94
             },
             {
                 "year": 2002.0,
-                "sales": 5.339999999999997
+                "sales": 5.34,
+                "Name": "Tetris Worlds",
+                "Global_Sales": 2.08
             },
             {
                 "year": 2003.0,
-                "sales": 2.4199999999999995
+                "sales": 2.4199999999999995,
+                "Name": "WarioWare, Inc.: Mega MicroGame$",
+                "Global_Sales": 1.23
             },
             {
                 "year": 2004.0,
-                "sales": 8.429999999999998
+                "sales": 8.43,
+                "Name": "WarioWare Touched!",
+                "Global_Sales": 2.31
             },
             {
                 "year": 2005.0,
-                "sales": 20.449999999999992
+                "sales": 20.449999999999996,
+                "Name": "Brain Age 2: More Training in Minutes a Day",
+                "Global_Sales": 15.3
             },
             {
                 "year": 2006.0,
-                "sales": 10.899999999999997
+                "sales": 10.9,
+                "Name": "WarioWare: Smooth Moves",
+                "Global_Sales": 2.92
             },
             {
                 "year": 2007.0,
-                "sales": 24.039999999999992
+                "sales": 24.040000000000003,
+                "Name": "Professor Layton and the Curious Village",
+                "Global_Sales": 5.26
             },
             {
                 "year": 2008.0,
-                "sales": 15.589999999999993
+                "sales": 15.589999999999991,
+                "Name": "Professor Layton and the Unwound Future",
+                "Global_Sales": 3.36
             },
             {
                 "year": 2009.0,
-                "sales": 20.31000000000001
+                "sales": 20.310000000000013,
+                "Name": "Professor Layton and the Last Specter",
+                "Global_Sales": 2.79
             },
             {
                 "year": 2010.0,
-                "sales": 11.819999999999993
+                "sales": 11.819999999999997,
+                "Name": "Mario vs. Donkey Kong: Mini-Land Mayhem!",
+                "Global_Sales": 2.69
             },
             {
                 "year": 2011.0,
-                "sales": 5.109999999999997
+                "sales": 5.1099999999999985,
+                "Name": "Professor Layton and the Mask of Miracle",
+                "Global_Sales": 1.78
             },
             {
                 "year": 2012.0,
-                "sales": 1.7600000000000005
+                "sales": 1.7600000000000002,
+                "Name": "Professor Layton vs Phoenix Wright: Ace Attorney",
+                "Global_Sales": 0.81
             },
             {
                 "year": 2013.0,
-                "sales": 0.99
+                "sales": 0.99,
+                "Name": "Professor Layton and the Azran Legacy",
+                "Global_Sales": 0.78
             },
             {
                 "year": 2014.0,
-                "sales": 1.5000000000000002
+                "sales": 1.5,
+                "Name": "Captain Toad: Treasure Tracker",
+                "Global_Sales": 1.19
             },
             {
                 "year": 2015.0,
-                "sales": 0.7000000000000002
+                "sales": 0.7000000000000001,
+                "Name": "Puzzle & Dragons Z + Super Mario Bros. Edition",
+                "Global_Sales": 0.46
             }
         ]
     },
@@ -810,131 +1198,195 @@
         "production": [
             {
                 "year": 1981.0,
-                "sales": 0.48
+                "sales": 0.48,
+                "Name": "Grand Prix",
+                "Global_Sales": 0.48
             },
             {
                 "year": 1982.0,
-                "sales": 1.5699999999999998
+                "sales": 1.5699999999999998,
+                "Name": "Pole Position",
+                "Global_Sales": 1.18
             },
             {
                 "year": 1984.0,
-                "sales": 5.949999999999999
+                "sales": 5.949999999999999,
+                "Name": "Excitebike",
+                "Global_Sales": 4.16
             },
             {
                 "year": 1986.0,
-                "sales": 1.96
+                "sales": 1.96,
+                "Name": "Rad Racer",
+                "Global_Sales": 1.96
             },
             {
                 "year": 1988.0,
-                "sales": 2.14
+                "sales": 2.14,
+                "Name": "R.C. Pro-Am",
+                "Global_Sales": 2.14
             },
             {
                 "year": 1990.0,
-                "sales": 6.26
+                "sales": 6.26,
+                "Name": "F-1 Race",
+                "Global_Sales": 3.41
             },
             {
                 "year": 1991.0,
-                "sales": 1.14
+                "sales": 1.14,
+                "Name": "Super R.C. Pro-Am",
+                "Global_Sales": 1.14
             },
             {
                 "year": 1992.0,
-                "sales": 9.04
+                "sales": 9.04,
+                "Name": "Super Mario Kart",
+                "Global_Sales": 8.76
             },
             {
                 "year": 1993.0,
-                "sales": 0.36
+                "sales": 0.36,
+                "Name": "Stunt Race FX",
+                "Global_Sales": 0.35
             },
             {
                 "year": 1994.0,
-                "sales": 2.1899999999999995
+                "sales": 2.19,
+                "Name": "Ridge Racer",
+                "Global_Sales": 0.79
             },
             {
                 "year": 1995.0,
-                "sales": 6.09
+                "sales": 6.090000000000001,
+                "Name": "Road Rash",
+                "Global_Sales": 1.27
             },
             {
                 "year": 1996.0,
-                "sales": 28.23999999999999
+                "sales": 28.239999999999995,
+                "Name": "Mario Kart 64",
+                "Global_Sales": 9.87
             },
             {
                 "year": 1997.0,
-                "sales": 31.910000000000004
+                "sales": 31.91,
+                "Name": "Gran Turismo",
+                "Global_Sales": 10.95
             },
             {
                 "year": 1998.0,
-                "sales": 27.89999999999999
+                "sales": 27.899999999999995,
+                "Name": "Need for Speed III: Hot Pursuit",
+                "Global_Sales": 3.12
             },
             {
                 "year": 1999.0,
-                "sales": 37.27
+                "sales": 37.26999999999999,
+                "Name": "Gran Turismo 2",
+                "Global_Sales": 9.49
             },
             {
                 "year": 2000.0,
-                "sales": 19.990000000000002
+                "sales": 19.990000000000006,
+                "Name": "Midnight Club: Street Racing",
+                "Global_Sales": 2.63
             },
             {
                 "year": 2001.0,
-                "sales": 55.809999999999995
+                "sales": 55.810000000000024,
+                "Name": "Gran Turismo 3: A-Spec",
+                "Global_Sales": 14.98
             },
             {
                 "year": 2002.0,
-                "sales": 32.0
+                "sales": 32.0,
+                "Name": "ATV Offroad Fury 2",
+                "Global_Sales": 2.18
             },
             {
                 "year": 2003.0,
-                "sales": 52.200000000000024
+                "sales": 52.20000000000001,
+                "Name": "Need for Speed Underground",
+                "Global_Sales": 7.2
             },
             {
                 "year": 2004.0,
-                "sales": 47.86000000000003
+                "sales": 47.86000000000002,
+                "Name": "Gran Turismo 4",
+                "Global_Sales": 11.66
             },
             {
                 "year": 2005.0,
-                "sales": 56.760000000000026
+                "sales": 56.76000000000001,
+                "Name": "Mario Kart DS",
+                "Global_Sales": 23.42
             },
             {
                 "year": 2006.0,
-                "sales": 34.09000000000002
+                "sales": 34.09,
+                "Name": "MotorStorm",
+                "Global_Sales": 3.88
             },
             {
                 "year": 2007.0,
-                "sales": 39.170000000000016
+                "sales": 39.17,
+                "Name": "Gran Turismo 5 Prologue",
+                "Global_Sales": 4.2
             },
             {
                 "year": 2008.0,
-                "sales": 70.76
+                "sales": 70.76,
+                "Name": "Mario Kart Wii",
+                "Global_Sales": 35.82
             },
             {
                 "year": 2009.0,
-                "sales": 34.19000000000002
+                "sales": 34.19,
+                "Name": "Forza Motorsport 3",
+                "Global_Sales": 5.51
             },
             {
                 "year": 2010.0,
-                "sales": 34.93
+                "sales": 34.93,
+                "Name": "Gran Turismo 5",
+                "Global_Sales": 10.77
             },
             {
                 "year": 2011.0,
-                "sales": 35.010000000000005
+                "sales": 35.010000000000005,
+                "Name": "Mario Kart 7",
+                "Global_Sales": 12.21
             },
             {
                 "year": 2012.0,
-                "sales": 14.459999999999997
+                "sales": 14.46,
+                "Name": "Need for Speed: Most Wanted",
+                "Global_Sales": 2.89
             },
             {
                 "year": 2013.0,
-                "sales": 13.040000000000001
+                "sales": 13.039999999999997,
+                "Name": "Gran Turismo 6",
+                "Global_Sales": 3.64
             },
             {
                 "year": 2014.0,
-                "sales": 16.69000000000001
+                "sales": 16.689999999999994,
+                "Name": "Mario Kart 8",
+                "Global_Sales": 6.96
             },
             {
                 "year": 2015.0,
-                "sales": 7.92
+                "sales": 7.92,
+                "Name": "Need for Speed (2015)",
+                "Global_Sales": 2.39
             },
             {
                 "year": 2016.0,
-                "sales": 1.6400000000000006
+                "sales": 1.6400000000000003,
+                "Name": "Forza Horizon 3",
+                "Global_Sales": 0.38
             }
         ]
     },
@@ -943,127 +1395,189 @@
         "production": [
             {
                 "year": 1986.0,
-                "sales": 2.52
+                "sales": 2.52,
+                "Name": "Dragon Warrior",
+                "Global_Sales": 2.52
             },
             {
                 "year": 1987.0,
-                "sales": 4.65
+                "sales": 4.65,
+                "Name": "Dragon Warrior II",
+                "Global_Sales": 2.56
             },
             {
                 "year": 1988.0,
-                "sales": 5.88
+                "sales": 5.88,
+                "Name": "Dragon Warrior III",
+                "Global_Sales": 3.87
             },
             {
                 "year": 1989.0,
-                "sales": 2.2
+                "sales": 2.2,
+                "Name": "Famicom Jump: Eiyuu Retsuden",
+                "Global_Sales": 1.1
             },
             {
                 "year": 1990.0,
-                "sales": 4.52
+                "sales": 4.52,
+                "Name": "Dragon Warrior IV",
+                "Global_Sales": 3.12
             },
             {
                 "year": 1991.0,
-                "sales": 3.25
+                "sales": 3.25,
+                "Name": "Final Fantasy II",
+                "Global_Sales": 1.77
             },
             {
                 "year": 1992.0,
-                "sales": 6.86
+                "sales": 6.86,
+                "Name": "Dragon Quest V: Tenkuu no Hanayome",
+                "Global_Sales": 2.79
             },
             {
                 "year": 1993.0,
-                "sales": 5.590000000000001
+                "sales": 5.589999999999999,
+                "Name": "Secret of Mana",
+                "Global_Sales": 1.83
             },
             {
                 "year": 1994.0,
-                "sales": 7.110000000000001
+                "sales": 7.109999999999999,
+                "Name": "Final Fantasy III",
+                "Global_Sales": 3.42
             },
             {
                 "year": 1995.0,
-                "sales": 14.260000000000002
+                "sales": 14.260000000000002,
+                "Name": "Dragon Quest VI: Maboroshi no Daichi",
+                "Global_Sales": 3.19
             },
             {
                 "year": 1996.0,
-                "sales": 43.96
+                "sales": 43.96000000000001,
+                "Name": "Pokemon Red/Pokemon Blue",
+                "Global_Sales": 31.37
             },
             {
                 "year": 1997.0,
-                "sales": 21.79
+                "sales": 21.790000000000003,
+                "Name": "Final Fantasy VII",
+                "Global_Sales": 9.72
             },
             {
                 "year": 1998.0,
-                "sales": 28.090000000000007
+                "sales": 28.089999999999996,
+                "Name": "Pok\u00e9mon Yellow: Special Pikachu Edition",
+                "Global_Sales": 14.64
             },
             {
                 "year": 1999.0,
-                "sales": 49.089999999999996
+                "sales": 49.09000000000001,
+                "Name": "Pokemon Gold/Pokemon Silver",
+                "Global_Sales": 23.1
             },
             {
                 "year": 2000.0,
-                "sales": 29.029999999999998
+                "sales": 29.029999999999998,
+                "Name": "Pok\u00e9mon Crystal Version",
+                "Global_Sales": 6.39
             },
             {
                 "year": 2001.0,
-                "sales": 22.06000000000001
+                "sales": 22.06,
+                "Name": "Final Fantasy X",
+                "Global_Sales": 8.05
             },
             {
                 "year": 2002.0,
-                "sales": 45.12999999999999
+                "sales": 45.129999999999995,
+                "Name": "Pokemon Ruby/Pokemon Sapphire",
+                "Global_Sales": 15.85
             },
             {
                 "year": 2003.0,
-                "sales": 30.279999999999983
+                "sales": 30.28,
+                "Name": "Final Fantasy X-2",
+                "Global_Sales": 5.29
             },
             {
                 "year": 2004.0,
-                "sales": 54.279999999999994
+                "sales": 54.280000000000015,
+                "Name": "Pokemon FireRed/Pokemon LeafGreen",
+                "Global_Sales": 10.49
             },
             {
                 "year": 2005.0,
-                "sales": 28.549999999999983
+                "sales": 28.54999999999999,
+                "Name": "Kingdom Hearts II",
+                "Global_Sales": 4.33
             },
             {
                 "year": 2006.0,
-                "sales": 58.050000000000004
+                "sales": 58.049999999999976,
+                "Name": "Pokemon Diamond/Pokemon Pearl",
+                "Global_Sales": 18.36
             },
             {
                 "year": 2007.0,
-                "sales": 43.89000000000003
+                "sales": 43.89000000000001,
+                "Name": "Pokemon Mystery Dungeon: Explorers of Time/Explorers of Darkness",
+                "Global_Sales": 4.96
             },
             {
                 "year": 2008.0,
-                "sales": 59.83000000000005
+                "sales": 59.83000000000005,
+                "Name": "Pok\u00e9mon Platinum Version",
+                "Global_Sales": 7.84
             },
             {
                 "year": 2009.0,
-                "sales": 47.900000000000006
+                "sales": 47.89999999999999,
+                "Name": "Dragon Quest IX: Sentinels of the Starry Skies",
+                "Global_Sales": 5.84
             },
             {
                 "year": 2010.0,
-                "sales": 70.56999999999996
+                "sales": 70.56999999999998,
+                "Name": "Pokemon Black/Pokemon White",
+                "Global_Sales": 15.32
             },
             {
                 "year": 2011.0,
-                "sales": 53.37000000000002
+                "sales": 53.37000000000001,
+                "Name": "The Elder Scrolls V: Skyrim",
+                "Global_Sales": 8.84
             },
             {
                 "year": 2012.0,
-                "sales": 47.81000000000002
+                "sales": 47.81000000000001,
+                "Name": "Pokemon Black 2/Pokemon White 2",
+                "Global_Sales": 8.33
             },
             {
                 "year": 2013.0,
-                "sales": 44.920000000000016
+                "sales": 44.92000000000001,
+                "Name": "Pokemon X/Pokemon Y",
+                "Global_Sales": 14.35
             },
             {
                 "year": 2014.0,
-                "sales": 45.859999999999985
+                "sales": 45.859999999999985,
+                "Name": "Pokemon Omega Ruby/Pokemon Alpha Sapphire",
+                "Global_Sales": 11.33
             },
             {
                 "year": 2015.0,
-                "sales": 36.439999999999976
+                "sales": 36.44000000000001,
+                "Name": "Fallout 4",
+                "Global_Sales": 6.96
             },
             {
                 "year": 2016.0,
-                "sales": 6.759999999999995
+                "sales": 6.759999999999998,
+                "Name": "Dark Souls III",
+                "Global_Sales": 1.56
             }
         ]
     },
@@ -1072,147 +1586,219 @@
         "production": [
             {
                 "year": 1980.0,
-                "sales": 7.069999999999999
+                "sales": 7.069999999999999,
+                "Name": "Asteroids",
+                "Global_Sales": 4.31
             },
             {
                 "year": 1981.0,
-                "sales": 10.040000000000001
+                "sales": 10.04,
+                "Name": "Demon Attack",
+                "Global_Sales": 2.13
             },
             {
                 "year": 1982.0,
-                "sales": 3.79
+                "sales": 3.79,
+                "Name": "Moon Patrol",
+                "Global_Sales": 1.12
             },
             {
                 "year": 1983.0,
-                "sales": 0.48
+                "sales": 0.48,
+                "Name": "Millipede",
+                "Global_Sales": 0.48
             },
             {
                 "year": 1984.0,
-                "sales": 31.099999999999998
+                "sales": 31.099999999999998,
+                "Name": "Duck Hunt",
+                "Global_Sales": 28.31
             },
             {
                 "year": 1985.0,
-                "sales": 1.0
+                "sales": 1.0,
+                "Name": "1942",
+                "Global_Sales": 1.0
             },
             {
                 "year": 1986.0,
-                "sales": 3.89
+                "sales": 3.8900000000000006,
+                "Name": "Gradius",
+                "Global_Sales": 1.36
             },
             {
                 "year": 1987.0,
-                "sales": 0.71
+                "sales": 0.71,
+                "Name": "Defender II",
+                "Global_Sales": 0.45
             },
             {
                 "year": 1988.0,
-                "sales": 0.51
+                "sales": 0.51,
+                "Name": "River Raid II",
+                "Global_Sales": 0.51
             },
             {
                 "year": 1989.0,
-                "sales": 1.2
+                "sales": 1.2,
+                "Name": "SolarStriker",
+                "Global_Sales": 1.2
             },
             {
                 "year": 1991.0,
-                "sales": 2.0
+                "sales": 2.0,
+                "Name": "Super Scope 6",
+                "Global_Sales": 1.65
             },
             {
                 "year": 1992.0,
-                "sales": 0.29000000000000004
+                "sales": 0.29000000000000004,
+                "Name": "Gunstar Heroes",
+                "Global_Sales": 0.13
             },
             {
                 "year": 1993.0,
-                "sales": 3.08
+                "sales": 3.08,
+                "Name": "Star Fox",
+                "Global_Sales": 2.99
             },
             {
                 "year": 1994.0,
-                "sales": 8.3
+                "sales": 8.299999999999999,
+                "Name": "Doom II: Hell on Earth",
+                "Global_Sales": 3.61
             },
             {
                 "year": 1995.0,
-                "sales": 4.1499999999999995
+                "sales": 4.15,
+                "Name": "Virtua Cop",
+                "Global_Sales": 0.62
             },
             {
                 "year": 1996.0,
-                "sales": 6.91
+                "sales": 6.91,
+                "Name": "Die Hard Trilogy",
+                "Global_Sales": 1.54
             },
             {
                 "year": 1997.0,
-                "sales": 22.169999999999998
+                "sales": 22.169999999999998,
+                "Name": "GoldenEye 007",
+                "Global_Sales": 8.09
             },
             {
                 "year": 1998.0,
-                "sales": 9.799999999999997
+                "sales": 9.8,
+                "Name": "Medal of Honor",
+                "Global_Sales": 2.67
             },
             {
                 "year": 1999.0,
-                "sales": 12.249999999999998
+                "sales": 12.25,
+                "Name": "007: Tomorrow Never Dies",
+                "Global_Sales": 3.21
             },
             {
                 "year": 2000.0,
-                "sales": 6.81
+                "sales": 6.809999999999999,
+                "Name": "Syphon Filter 2",
+                "Global_Sales": 2.15
             },
             {
                 "year": 2001.0,
-                "sales": 24.770000000000003
+                "sales": 24.770000000000003,
+                "Name": "Halo: Combat Evolved",
+                "Global_Sales": 6.43
             },
             {
                 "year": 2002.0,
-                "sales": 49.09999999999999
+                "sales": 49.09999999999998,
+                "Name": "Medal of Honor: Frontline",
+                "Global_Sales": 6.83
             },
             {
                 "year": 2003.0,
-                "sales": 27.140000000000008
+                "sales": 27.140000000000015,
+                "Name": "Medal of Honor: Rising Sun",
+                "Global_Sales": 5.13
             },
             {
                 "year": 2004.0,
-                "sales": 46.95000000000003
+                "sales": 46.95000000000004,
+                "Name": "Halo 2",
+                "Global_Sales": 8.49
             },
             {
                 "year": 2005.0,
-                "sales": 41.890000000000036
+                "sales": 41.89000000000003,
+                "Name": "Star Wars: Battlefront II",
+                "Global_Sales": 3.59
             },
             {
                 "year": 2006.0,
-                "sales": 40.74000000000004
+                "sales": 40.739999999999995,
+                "Name": "Gears of War",
+                "Global_Sales": 6.11
             },
             {
                 "year": 2007.0,
-                "sales": 71.03999999999999
+                "sales": 71.04,
+                "Name": "Halo 3",
+                "Global_Sales": 12.14
             },
             {
                 "year": 2008.0,
-                "sales": 59.51000000000001
+                "sales": 59.51,
+                "Name": "Call of Duty: World at War",
+                "Global_Sales": 7.37
             },
             {
                 "year": 2009.0,
-                "sales": 70.39000000000001
+                "sales": 70.38999999999999,
+                "Name": "Call of Duty: Modern Warfare 2",
+                "Global_Sales": 13.51
             },
             {
                 "year": 2010.0,
-                "sales": 79.83999999999992
+                "sales": 79.83999999999999,
+                "Name": "Call of Duty: Black Ops",
+                "Global_Sales": 14.64
             },
             {
                 "year": 2011.0,
-                "sales": 99.4
+                "sales": 99.40000000000002,
+                "Name": "Call of Duty: Modern Warfare 3",
+                "Global_Sales": 14.76
             },
             {
                 "year": 2012.0,
-                "sales": 72.88
+                "sales": 72.88000000000001,
+                "Name": "Call of Duty: Black Ops II",
+                "Global_Sales": 14.03
             },
             {
                 "year": 2013.0,
-                "sales": 62.799999999999976
+                "sales": 62.80000000000001,
+                "Name": "Call of Duty: Ghosts",
+                "Global_Sales": 10.21
             },
             {
                 "year": 2014.0,
-                "sales": 65.99999999999996
+                "sales": 66.0,
+                "Name": "Call of Duty: Advanced Warfare",
+                "Global_Sales": 7.6
             },
             {
                 "year": 2015.0,
-                "sales": 66.14999999999999
+                "sales": 66.15000000000002,
+                "Name": "Call of Duty: Black Ops 3",
+                "Global_Sales": 14.24
             },
             {
                 "year": 2016.0,
-                "sales": 18.219999999999995
+                "sales": 18.219999999999995,
+                "Name": "Uncharted 4: A Thief's End",
+                "Global_Sales": 4.2
             }
         ]
     },
@@ -1221,123 +1807,183 @@
         "production": [
             {
                 "year": 1981.0,
-                "sales": 0.45
+                "sales": 0.45,
+                "Name": "Phoenix",
+                "Global_Sales": 0.45
             },
             {
                 "year": 1985.0,
-                "sales": 0.03
+                "sales": 0.03,
+                "Name": "Alter Ego",
+                "Global_Sales": 0.03
             },
             {
                 "year": 1988.0,
-                "sales": 0.03
+                "sales": 0.03,
+                "Name": "SimCity",
+                "Global_Sales": 0.03
             },
             {
                 "year": 1990.0,
-                "sales": 1.14
+                "sales": 1.14,
+                "Name": "Pilotwings",
+                "Global_Sales": 1.14
             },
             {
                 "year": 1991.0,
-                "sales": 2.14
+                "sales": 2.14,
+                "Name": "SimCity",
+                "Global_Sales": 1.98
             },
             {
                 "year": 1992.0,
-                "sales": 2.14
+                "sales": 2.14,
+                "Name": "SimCity 2000",
+                "Global_Sales": 2.14
             },
             {
                 "year": 1993.0,
-                "sales": 0.19
+                "sales": 0.19,
+                "Name": "Thoroughbred Breeder",
+                "Global_Sales": 0.19
             },
             {
                 "year": 1994.0,
-                "sales": 2.73
+                "sales": 2.73,
+                "Name": "Super Momotarou Dentetsu III",
+                "Global_Sales": 0.91
             },
             {
                 "year": 1995.0,
-                "sales": 4.18
+                "sales": 4.180000000000001,
+                "Name": "Air Combat",
+                "Global_Sales": 1.83
             },
             {
                 "year": 1996.0,
-                "sales": 11.330000000000004
+                "sales": 11.330000000000002,
+                "Name": "Microsoft Flight Simulator",
+                "Global_Sales": 5.12
             },
             {
                 "year": 1997.0,
-                "sales": 9.65
+                "sales": 9.65,
+                "Name": "Game de Hakken!! Tamagotchi 2",
+                "Global_Sales": 1.45
             },
             {
                 "year": 1998.0,
-                "sales": 7.109999999999999
+                "sales": 7.109999999999999,
+                "Name": "Star Wars: Rogue Squadron",
+                "Global_Sales": 2.17
             },
             {
                 "year": 1999.0,
-                "sales": 11.44
+                "sales": 11.44,
+                "Name": "Pokemon Snap",
+                "Global_Sales": 3.63
             },
             {
                 "year": 2000.0,
-                "sales": 3.379999999999999
+                "sales": 3.38,
+                "Name": "Armored Core 2",
+                "Global_Sales": 0.79
             },
             {
                 "year": 2001.0,
-                "sales": 19.54
+                "sales": 19.54,
+                "Name": "Ace Combat 04: Shattered Skies",
+                "Global_Sales": 3.17
             },
             {
                 "year": 2002.0,
-                "sales": 10.81
+                "sales": 10.81,
+                "Name": "The Sims: Unleashed",
+                "Global_Sales": 3.76
             },
             {
                 "year": 2003.0,
-                "sales": 21.21
+                "sales": 21.21,
+                "Name": "The Sims",
+                "Global_Sales": 2.77
             },
             {
                 "year": 2004.0,
-                "sales": 10.849999999999996
+                "sales": 10.85,
+                "Name": "Dance Dance Revolution Extreme",
+                "Global_Sales": 2.13
             },
             {
                 "year": 2005.0,
-                "sales": 49.27000000000004
+                "sales": 49.27000000000002,
+                "Name": "Nintendogs",
+                "Global_Sales": 24.76
             },
             {
                 "year": 2006.0,
-                "sales": 21.96000000000001
+                "sales": 21.95999999999999,
+                "Name": "Cooking Mama",
+                "Global_Sales": 5.72
             },
             {
                 "year": 2007.0,
-                "sales": 48.97000000000001
+                "sales": 48.970000000000006,
+                "Name": "MySims",
+                "Global_Sales": 3.69
             },
             {
                 "year": 2008.0,
-                "sales": 46.759999999999984
+                "sales": 46.76000000000001,
+                "Name": "Animal Crossing: City Folk",
+                "Global_Sales": 4.68
             },
             {
                 "year": 2009.0,
-                "sales": 33.740000000000016
+                "sales": 33.73999999999998,
+                "Name": "The Sims 3",
+                "Global_Sales": 8.11
             },
             {
                 "year": 2010.0,
-                "sales": 22.450000000000014
+                "sales": 22.45,
+                "Name": "The Sims 3",
+                "Global_Sales": 2.33
             },
             {
                 "year": 2011.0,
-                "sales": 15.279999999999998
+                "sales": 15.279999999999994,
+                "Name": "Nintendogs + cats",
+                "Global_Sales": 3.81
             },
             {
                 "year": 2012.0,
-                "sales": 13.38
+                "sales": 13.38,
+                "Name": "Animal Crossing: New Leaf",
+                "Global_Sales": 9.09
             },
             {
                 "year": 2013.0,
-                "sales": 8.669999999999995
+                "sales": 8.67,
+                "Name": "Tomodachi Life",
+                "Global_Sales": 5.15
             },
             {
                 "year": 2014.0,
-                "sales": 5.55
+                "sales": 5.549999999999999,
+                "Name": "The Sims 4",
+                "Global_Sales": 2.97
             },
             {
                 "year": 2015.0,
-                "sales": 5.62
+                "sales": 5.619999999999999,
+                "Name": "Animal Crossing: Happy Home Designer",
+                "Global_Sales": 2.98
             },
             {
                 "year": 2016.0,
-                "sales": 0.3900000000000001
+                "sales": 0.39,
+                "Name": "Story of Seasons: Good Friends of the Three Villages",
+                "Global_Sales": 0.19
             }
         ]
     },
@@ -1346,151 +1992,225 @@
         "production": [
             {
                 "year": 1980.0,
-                "sales": 0.49
+                "sales": 0.49,
+                "Name": "Ice Hockey",
+                "Global_Sales": 0.49
             },
             {
                 "year": 1981.0,
-                "sales": 0.7899999999999999
+                "sales": 0.79,
+                "Name": "RealSports Football",
+                "Global_Sales": 0.26
             },
             {
                 "year": 1982.0,
-                "sales": 1.05
+                "sales": 1.05,
+                "Name": "The Activision Decathlon",
+                "Global_Sales": 0.55
             },
             {
                 "year": 1983.0,
-                "sales": 3.2
+                "sales": 3.2,
+                "Name": "Baseball",
+                "Global_Sales": 3.2
             },
             {
                 "year": 1984.0,
-                "sales": 6.18
+                "sales": 6.18,
+                "Name": "Golf",
+                "Global_Sales": 4.01
             },
             {
                 "year": 1985.0,
-                "sales": 1.96
+                "sales": 1.96,
+                "Name": "Soccer",
+                "Global_Sales": 1.96
             },
             {
                 "year": 1986.0,
-                "sales": 5.57
+                "sales": 5.57,
+                "Name": "World Class Track Meet",
+                "Global_Sales": 3.08
             },
             {
                 "year": 1987.0,
-                "sales": 3.7199999999999998
+                "sales": 3.7199999999999998,
+                "Name": "Volleyball",
+                "Global_Sales": 2.15
             },
             {
                 "year": 1988.0,
-                "sales": 3.5999999999999996
+                "sales": 3.5999999999999996,
+                "Name": "Ice Hockey",
+                "Global_Sales": 2.42
             },
             {
                 "year": 1989.0,
-                "sales": 5.720000000000001
+                "sales": 5.720000000000001,
+                "Name": "Golf",
+                "Global_Sales": 2.12
             },
             {
                 "year": 1990.0,
-                "sales": 2.11
+                "sales": 2.11,
+                "Name": "Nintendo World Cup",
+                "Global_Sales": 1.48
             },
             {
                 "year": 1991.0,
-                "sales": 2.4099999999999997
+                "sales": 2.41,
+                "Name": "NES Open Tournament Golf",
+                "Global_Sales": 1.0
             },
             {
                 "year": 1992.0,
-                "sales": 2.95
+                "sales": 2.95,
+                "Name": "NBA Jam",
+                "Global_Sales": 2.05
             },
             {
                 "year": 1993.0,
-                "sales": 3.1799999999999997
+                "sales": 3.18,
+                "Name": "Capcom's Soccer Shootout",
+                "Global_Sales": 0.8
             },
             {
                 "year": 1994.0,
-                "sales": 8.389999999999999
+                "sales": 8.389999999999999,
+                "Name": "NBA Jam",
+                "Global_Sales": 1.39
             },
             {
                 "year": 1995.0,
-                "sales": 7.980000000000002
+                "sales": 7.98,
+                "Name": "Derby Stallion III",
+                "Global_Sales": 1.15
             },
             {
                 "year": 1996.0,
-                "sales": 17.450000000000006
+                "sales": 17.450000000000003,
+                "Name": "2Xtreme",
+                "Global_Sales": 1.4
             },
             {
                 "year": 1997.0,
-                "sales": 30.020000000000003
+                "sales": 30.020000000000007,
+                "Name": "Hot Shots Golf",
+                "Global_Sales": 2.79
             },
             {
                 "year": 1998.0,
-                "sales": 41.79000000000002
+                "sales": 41.790000000000006,
+                "Name": "Cool Boarders 3",
+                "Global_Sales": 2.31
             },
             {
                 "year": 1999.0,
-                "sales": 30.289999999999996
+                "sales": 30.29,
+                "Name": "Tony Hawk's Pro Skater",
+                "Global_Sales": 5.02
             },
             {
                 "year": 2000.0,
-                "sales": 41.19
+                "sales": 41.18999999999999,
+                "Name": "Tony Hawk's Pro Skater 2",
+                "Global_Sales": 4.68
             },
             {
                 "year": 2001.0,
-                "sales": 52.01000000000002
+                "sales": 52.01000000000001,
+                "Name": "Tony Hawk's Pro Skater 3",
+                "Global_Sales": 4.41
             },
             {
                 "year": 2002.0,
-                "sales": 67.33999999999995
+                "sales": 67.33999999999999,
+                "Name": "Madden NFL 2003",
+                "Global_Sales": 4.14
             },
             {
                 "year": 2003.0,
-                "sales": 65.40999999999998
+                "sales": 65.41000000000001,
+                "Name": "Madden NFL 2004",
+                "Global_Sales": 5.23
             },
             {
                 "year": 2004.0,
-                "sales": 63.68000000000003
+                "sales": 63.680000000000014,
+                "Name": "Madden NFL 2005",
+                "Global_Sales": 4.53
             },
             {
                 "year": 2005.0,
-                "sales": 60.13000000000004
+                "sales": 60.130000000000024,
+                "Name": "Madden NFL 06",
+                "Global_Sales": 4.91
             },
             {
                 "year": 2006.0,
-                "sales": 137.84000000000006
+                "sales": 137.83999999999992,
+                "Name": "Wii Sports",
+                "Global_Sales": 82.74
             },
             {
                 "year": 2007.0,
-                "sales": 98.20000000000002
+                "sales": 98.19999999999999,
+                "Name": "Wii Fit",
+                "Global_Sales": 22.72
             },
             {
                 "year": 2008.0,
-                "sales": 96.21999999999996
+                "sales": 96.21999999999994,
+                "Name": "Mario & Sonic at the Olympic Games",
+                "Global_Sales": 5.14
             },
             {
                 "year": 2009.0,
-                "sales": 138.5200000000001
+                "sales": 138.52000000000004,
+                "Name": "Wii Sports Resort",
+                "Global_Sales": 33.0
             },
             {
                 "year": 2010.0,
-                "sales": 93.35
+                "sales": 93.34999999999991,
+                "Name": "Zumba Fitness",
+                "Global_Sales": 6.81
             },
             {
                 "year": 2011.0,
-                "sales": 57.250000000000014
+                "sales": 57.24999999999999,
+                "Name": "FIFA 12",
+                "Global_Sales": 6.69
             },
             {
                 "year": 2012.0,
-                "sales": 30.930000000000007
+                "sales": 30.929999999999996,
+                "Name": "NBA 2K13",
+                "Global_Sales": 3.0
             },
             {
                 "year": 2013.0,
-                "sales": 41.550000000000026
+                "sales": 41.55000000000002,
+                "Name": "FIFA 14",
+                "Global_Sales": 6.9
             },
             {
                 "year": 2014.0,
-                "sales": 46.66
+                "sales": 46.660000000000004,
+                "Name": "FIFA 15",
+                "Global_Sales": 6.59
             },
             {
                 "year": 2015.0,
-                "sales": 41.54000000000001
+                "sales": 41.54,
+                "Name": "FIFA 16",
+                "Global_Sales": 8.49
             },
             {
                 "year": 2016.0,
-                "sales": 14.599999999999996
+                "sales": 14.600000000000001,
+                "Name": "FIFA 17",
+                "Global_Sales": 4.77
             }
         ]
     },
@@ -1499,107 +2219,159 @@
         "production": [
             {
                 "year": 1991.0,
-                "sales": 0.94
+                "sales": 0.94,
+                "Name": "Kidou Senshi Gundam F91: Formula Senki 0122",
+                "Global_Sales": 0.33
             },
             {
                 "year": 1992.0,
-                "sales": 0.36
+                "sales": 0.36,
+                "Name": "Romance of the Three Kingdoms III: Dragon of Destiny",
+                "Global_Sales": 0.29
             },
             {
                 "year": 1993.0,
-                "sales": 0.81
+                "sales": 0.81,
+                "Name": "Nobunaga no Yabou: Haouden",
+                "Global_Sales": 0.62
             },
             {
                 "year": 1994.0,
-                "sales": 3.5600000000000005
+                "sales": 3.5600000000000005,
+                "Name": "Warcraft: Orcs & Humans",
+                "Global_Sales": 2.08
             },
             {
                 "year": 1995.0,
-                "sales": 6.510000000000001
+                "sales": 6.510000000000001,
+                "Name": "Warcraft II: Tides of Darkness",
+                "Global_Sales": 4.21
             },
             {
                 "year": 1996.0,
-                "sales": 5.610000000000001
+                "sales": 5.61,
+                "Name": "Command & Conquer: Red Alert",
+                "Global_Sales": 2.85
             },
             {
                 "year": 1997.0,
-                "sales": 7.710000000000002
+                "sales": 7.710000000000002,
+                "Name": "Theme Hospital",
+                "Global_Sales": 2.4
             },
             {
                 "year": 1998.0,
-                "sales": 13.47
+                "sales": 13.469999999999999,
+                "Name": "Pok\u00e9mon Trading Card Game",
+                "Global_Sales": 3.7
             },
             {
                 "year": 1999.0,
-                "sales": 18.460000000000008
+                "sales": 18.459999999999994,
+                "Name": "Pokemon Stadium",
+                "Global_Sales": 5.45
             },
             {
                 "year": 2000.0,
-                "sales": 8.500000000000002
+                "sales": 8.499999999999998,
+                "Name": "Pok\u00e9mon Stadium 2",
+                "Global_Sales": 2.73
             },
             {
                 "year": 2001.0,
-                "sales": 7.55
+                "sales": 7.55,
+                "Name": "Yu-Gi-Oh! The Eternal Duelist Soul",
+                "Global_Sales": 2.07
             },
             {
                 "year": 2002.0,
-                "sales": 5.559999999999998
+                "sales": 5.56,
+                "Name": "RollerCoaster Tycoon 2",
+                "Global_Sales": 1.25
             },
             {
                 "year": 2003.0,
-                "sales": 8.030000000000003
+                "sales": 8.030000000000001,
+                "Name": "Warcraft III: The Frozen Throne",
+                "Global_Sales": 1.54
             },
             {
                 "year": 2004.0,
-                "sales": 7.1899999999999995
+                "sales": 7.19,
+                "Name": "Pikmin 2",
+                "Global_Sales": 1.2
             },
             {
                 "year": 2005.0,
-                "sales": 5.37
+                "sales": 5.37,
+                "Name": "Zoo Tycoon DS",
+                "Global_Sales": 1.0
             },
             {
                 "year": 2006.0,
-                "sales": 4.269999999999995
+                "sales": 4.2700000000000005,
+                "Name": "Worms: Open Warfare",
+                "Global_Sales": 0.78
             },
             {
                 "year": 2007.0,
-                "sales": 9.529999999999992
+                "sales": 9.53,
+                "Name": "Fire Emblem: Radiant Dawn",
+                "Global_Sales": 0.51
             },
             {
                 "year": 2008.0,
-                "sales": 11.689999999999996
+                "sales": 11.689999999999998,
+                "Name": "Spore",
+                "Global_Sales": 1.17
             },
             {
                 "year": 2009.0,
-                "sales": 12.559999999999992
+                "sales": 12.559999999999993,
+                "Name": "Halo Wars",
+                "Global_Sales": 2.63
             },
             {
                 "year": 2010.0,
-                "sales": 14.039999999999988
+                "sales": 14.039999999999996,
+                "Name": "StarCraft II: Wings of Liberty",
+                "Global_Sales": 4.83
             },
             {
                 "year": 2011.0,
-                "sales": 9.419999999999995
+                "sales": 9.419999999999996,
+                "Name": "LEGO Battles: Ninjago",
+                "Global_Sales": 1.55
             },
             {
                 "year": 2012.0,
-                "sales": 3.329999999999999
+                "sales": 3.33,
+                "Name": "XCOM: Enemy Unknown",
+                "Global_Sales": 0.72
             },
             {
                 "year": 2013.0,
-                "sales": 6.330000000000001
+                "sales": 6.33,
+                "Name": "StarCraft II: Heart of the Swarm",
+                "Global_Sales": 1.67
             },
             {
                 "year": 2014.0,
-                "sales": 0.9900000000000002
+                "sales": 0.9900000000000002,
+                "Name": "Sid Meier's Civilization: Beyond Earth",
+                "Global_Sales": 0.37
             },
             {
                 "year": 2015.0,
-                "sales": 1.8200000000000003
+                "sales": 1.82,
+                "Name": "StarCraft II: Legacy of the Void",
+                "Global_Sales": 0.51
             },
             {
                 "year": 2016.0,
-                "sales": 0.5000000000000001
+                "sales": 0.5,
+                "Name": "XCOM 2",
+                "Global_Sales": 0.2
             }
         ]
     }

@@ -4,15 +4,15 @@
         "regions": [
             {
                 "region": "NA Sales",
-                "sales": 877.83
+                "sales": 871.7
             },
             {
                 "region": "EU Sales",
-                "sales": 525.0
+                "sales": 522.77
             },
             {
                 "region": "JP Sales",
-                "sales": 159.94
+                "sales": 158.66
             }
         ]
     },
@@ -21,15 +21,15 @@
         "regions": [
             {
                 "region": "NA Sales",
-                "sales": 105.8
+                "sales": 102.06
             },
             {
                 "region": "EU Sales",
-                "sales": 64.13
+                "sales": 63.81
             },
             {
                 "region": "JP Sales",
-                "sales": 52.07
+                "sales": 52.01
             }
         ]
     },
@@ -38,15 +38,15 @@
         "regions": [
             {
                 "region": "NA Sales",
-                "sales": 223.59
+                "sales": 221.41
             },
             {
                 "region": "EU Sales",
-                "sales": 101.32
+                "sales": 100.17
             },
             {
                 "region": "JP Sales",
-                "sales": 87.35
+                "sales": 87.15
             }
         ]
     },
@@ -55,15 +55,15 @@
         "regions": [
             {
                 "region": "NA Sales",
-                "sales": 410.24
+                "sales": 403.38
             },
             {
                 "region": "EU Sales",
-                "sales": 215.98
+                "sales": 214.08
             },
             {
                 "region": "JP Sales",
-                "sales": 107.76
+                "sales": 107.69
             }
         ]
     },
@@ -72,15 +72,15 @@
         "regions": [
             {
                 "region": "NA Sales",
-                "sales": 447.05
+                "sales": 445.99
             },
             {
                 "region": "EU Sales",
-                "sales": 201.63
+                "sales": 200.67
             },
             {
                 "region": "JP Sales",
-                "sales": 130.77
+                "sales": 130.65
             }
         ]
     },
@@ -89,15 +89,15 @@
         "regions": [
             {
                 "region": "NA Sales",
-                "sales": 123.78
+                "sales": 122.6
             },
             {
                 "region": "EU Sales",
-                "sales": 50.78
+                "sales": 50.58
             },
             {
                 "region": "JP Sales",
-                "sales": 57.31
+                "sales": 56.68
             }
         ]
     },
@@ -106,15 +106,15 @@
         "regions": [
             {
                 "region": "NA Sales",
-                "sales": 359.42
+                "sales": 357.86
             },
             {
                 "region": "EU Sales",
-                "sales": 238.39
+                "sales": 237.3
             },
             {
                 "region": "JP Sales",
-                "sales": 56.69
+                "sales": 56.62
             }
         ]
     },
@@ -123,15 +123,15 @@
         "regions": [
             {
                 "region": "NA Sales",
-                "sales": 327.28
+                "sales": 326.58
             },
             {
                 "region": "EU Sales",
-                "sales": 188.06
+                "sales": 187.64
             },
             {
                 "region": "JP Sales",
-                "sales": 352.27
+                "sales": 350.74
             }
         ]
     },
@@ -140,15 +140,15 @@
         "regions": [
             {
                 "region": "NA Sales",
-                "sales": 582.6
+                "sales": 578.35
             },
             {
                 "region": "EU Sales",
-                "sales": 313.27
+                "sales": 312.75
             },
             {
                 "region": "JP Sales",
-                "sales": 38.28
+                "sales": 38.2
             }
         ]
     },
@@ -157,15 +157,15 @@
         "regions": [
             {
                 "region": "NA Sales",
-                "sales": 183.04
+                "sales": 181.96
             },
             {
                 "region": "EU Sales",
-                "sales": 113.38
+                "sales": 113.23
             },
             {
                 "region": "JP Sales",
-                "sales": 63.7
+                "sales": 63.54
             }
         ]
     },
@@ -174,15 +174,15 @@
         "regions": [
             {
                 "region": "NA Sales",
-                "sales": 683.35
+                "sales": 680.44
             },
             {
                 "region": "EU Sales",
-                "sales": 376.85
+                "sales": 375.21
             },
             {
                 "region": "JP Sales",
-                "sales": 135.37
+                "sales": 134.82
             }
         ]
     },
@@ -191,15 +191,15 @@
         "regions": [
             {
                 "region": "NA Sales",
-                "sales": 68.7
+                "sales": 68.26
             },
             {
                 "region": "EU Sales",
-                "sales": 45.34
+                "sales": 45.17
             },
             {
                 "region": "JP Sales",
-                "sales": 49.46
+                "sales": 49.13
             }
         ]
     }

@@ -1,50 +1,50 @@
 [
     {
         "genre": "Action",
-        "sales": 1751.17
+        "sales": 1741.02
     },
     {
         "genre": "Adventure",
-        "sales": 239.04
+        "sales": 234.82
     },
     {
         "genre": "Fighting",
-        "sales": 448.91
+        "sales": 444.93
     },
     {
         "genre": "Misc",
-        "sales": 809.96
+        "sales": 799.93
     },
     {
         "genre": "Platform",
-        "sales": 831.37
+        "sales": 829.15
     },
     {
         "genre": "Puzzle",
-        "sales": 244.95
+        "sales": 242.9
     },
     {
         "genre": "Racing",
-        "sales": 732.04
+        "sales": 729.02
     },
     {
         "genre": "Role-Playing",
-        "sales": 927.33
+        "sales": 924.5
     },
     {
         "genre": "Shooter",
-        "sales": 1037.37
+        "sales": 1032.37
     },
     {
         "genre": "Simulation",
-        "sales": 391.91
+        "sales": 390.39
     },
     {
         "genre": "Sports",
-        "sales": 1330.93
+        "sales": 1325.27
     },
     {
         "genre": "Strategy",
-        "sales": 175.12
+        "sales": 174.11
     }
 ]
