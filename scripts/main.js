@@ -14,19 +14,20 @@ const genreList = [
     "Puzzle"
 ];
 
+// https://coolors.co/palette/cad2c5-84a98c-52796f-354f52-2f3e46
 const genrePalette = [
-    "#007f5f",
-    "#55a630",
-    "#aacc00",
-    "#005f73",
-    "#0a9396",
-    "#94d2bd",
-    "#e9d8a6",
-    "#ee9b00",
-    "#ca6702",
-    "#bb3e03",
+    "#9b2226",
     "#ae2012",
-    "#9b2226"
+    "#bb3e03",
+    "#ca6702",
+    "#ee9b00",
+    "#e9d8a6",
+    "#CAD2C5",
+    "#84A98C",
+    "#6B917E",
+    "#507068",
+    "#354F52",
+    "#2F3E46"
 ];
 
 // constants to define the size
@@ -242,7 +243,7 @@ async function scrollVis() {
             .duration(500)
             .call(yLineChartAxis);
 
-        lineChart(lineChartSelection, lineChartData, widthLineChart, heightLineChart, genrePalette[index]);
+        lineChart(lineChartSelection, lineChartData, widthLineChart, heightLineChart, genrePalette[genreList.length - 1 - index]);
         lineChartSelection.attr('opacity', 1.0)
 
         const barChartSelection = d3.select('#barchart');
@@ -281,7 +282,7 @@ async function scrollVis() {
             .call(yBarChartAxis);
 
         barChartSelection.attr('opacity', 1.0)
-        histChart(barChartSelection, barChartData, widthBarChart, heightBarChart, genrePalette[index])
+        barChart(barChartSelection, barChartData, widthBarChart, heightBarChart, genrePalette[genreList.length - 1 - index])
 
         //pie chart update
         const pieChartSelection = d3.select('#piechart');
@@ -427,7 +428,6 @@ async function setupScrollSection(filename, scrollSection) {
             `translate(${dimensions.margins.left}, ${topPadding})`
         );
 
-    palette = genrePalette.reverse()
     var bubble = ctr.selectAll('circle')
         .data(dataset)
         .join('circle')
@@ -435,7 +435,7 @@ async function setupScrollSection(filename, scrollSection) {
         .attr('r', d => radiusScaler(qtAccessor(d)))
         .attr('cx', dimensions.width / 2)
         .attr('cy', (d, i) => bubblesDistance * ((i % dataset.length)))
-        .style('fill', (d, i) => genrePalette[i]);
+        .style('fill', (d, i) =>  genrePalette[genreList.length - 1 - i]);
 
     const labelsGruop = ctr.append('g');
     const fontSize = maxRadius * 0.165;
@@ -485,11 +485,39 @@ async function setupScrollSection(filename, scrollSection) {
     });
 }
 
-async function darwDonutChart(filenameDonut) {
-    // setSizes()
-    const datasetDonut = await d3.json(filenameDonut);
-    var width = parseInt(d3.select('#sumup').style('width'), 10);
-    var height = parseInt(d3.select('#sumup').style('height'), 10);
+function salesRange(data, startYear, endYear) {
+    var sales = []
+    data.forEach(element => {
+        var genreSales = { genre: element.genre }
+        var accumulator = 0;
+        element.production.forEach(genreElement => {
+            const elemYear = genreElement.year;
+            if (elemYear >= startYear && elemYear <= endYear) {
+                accumulator += genreElement.sales;
+            }
+        });
+        genreSales.sales = Math.round(accumulator * 100) / 100;
+        sales.push(genreSales);
+    });
+    return sales;
+}
+
+function generateArrayOfYears() {
+    var years = [];
+    var endYear = 2016;
+    var startYear = 1980;
+    while (startYear <= endYear) {
+        years.push(startYear++);
+    }
+    return years;
+}
+
+
+function darwDonutChart(datasetDonut) {
+    var width = parseInt(d3.select('#svgsumup').style('width'), 10);
+    var height = parseInt(d3.select('#svgsumup').style('height'), 10);
+    var widthSlider = parseInt(d3.select('#slider').style('width'), 10);
+    var heightSlider = parseInt(d3.select('#slider').style('height'), 10);
     var margin = 50;
     height = (width * 0.85 / 2);
 
@@ -512,9 +540,49 @@ async function darwDonutChart(filenameDonut) {
         .style('color', '#fff')
         .style("padding", "10px")
 
-    donutChart(donutGroup, datasetDonut, width - margin, height - margin, genrePalette)
+    //Setup donut chart
+    setupSlider()
+
+    function setupSlider() {
+        var data = generateArrayOfYears();
+        // Step
+        var sliderStep = d3
+            .sliderLeft()
+            .min(d3.min(data))
+            .max(d3.max(data))
+            .width(widthSlider)
+            .height(height * 0.8)
+            .tickFormat(d3.format(''))
+            .ticks(10)
+            .step(1)
+            .default([1980, 2016])
+            .fill('#2196f3')
+            .on('onchange', val => {
+                console.log(val)
+                updateDonutChart(val[0], val[1]);
+            });
+
+        var gStep = d3
+            .select('#slider')
+            .append('svg')
+            .attr('width', 100)
+            .attr('height', height)
+            .append('g')
+            .attr("transform", `translate(80, 30)`);
+
+        gStep.call(sliderStep);
+    }
+
+    function updateDonutChart(startYear, endYear) {
+        var data = salesRange(datasetDonut, startYear, endYear)
+        console.log(data)
+        donutChart(donutGroup, data, width - margin, height - margin, genrePalette)
+    }
+    updateDonutChart(1980, 2016);
 
 }
+
+
 
 function setSizes() {
     dimensions.svgVis.width = parseInt(d3.select('#visSvgMain').style('width'), 10);
@@ -533,10 +601,12 @@ function setSizes() {
     heightDonutChart = widthDonutChart;
 };
 
-function drawing() {
+async function drawing() {
     const filenameBubble = '../data_cleaning/dataset/bubble_data.json';
     const filenameDonut = '../data_cleaning/dataset/genreSales_data.json';
-    darwDonutChart(filenameDonut);
+    const filenameGenreSalesYearTrend = '../data_cleaning/dataset/salesTrend_data.json'
+    const datasetDonut = await d3.json(filenameGenreSalesYearTrend);
+    darwDonutChart(datasetDonut);
     var scrollSection = d3.select('#sections');
     setupScrollSection(filenameBubble, scrollSection);
 }

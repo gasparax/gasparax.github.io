@@ -24,9 +24,9 @@ function pieChart(selection, data, widthPieChart, heightPieChart) {
         .innerRadius(0);
 
     let angleInterpolation = d3.interpolate(pie.startAngle()(), pie.endAngle()());
-
     let innerRadiusInterpolation = d3.interpolate(0, 0);
     let outerRadiusInterpolation = d3.interpolate(0, radius);
+    
     //draw shape
     selection.selectAll('path')
         .data(slices)
@@ -50,7 +50,7 @@ function pieChart(selection, data, widthPieChart, heightPieChart) {
             };
         })
         .attr("stroke", "#203239")
-        .style("stroke-width", "3px")
+        .style("stroke-width", "1.5px")
         .style("opacity", 1);
 
     selection.transition()
@@ -97,5 +97,4 @@ function pieChart(selection, data, widthPieChart, heightPieChart) {
                 .attr('x', 0)
                 .text(d => (d.data.sales) + ' Mln')
         );
-
 }

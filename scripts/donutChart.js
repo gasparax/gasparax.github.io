@@ -1,6 +1,4 @@
 function donutChart(selection, data, widthDonutChart, heightDonutChart, palette) {
-  margin = 40;
-
   // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
   const radius = Math.min(widthDonutChart, heightDonutChart) / 2
 
@@ -12,9 +10,9 @@ function donutChart(selection, data, widthDonutChart, heightDonutChart, palette)
 
   // set the color scale
   // const colors = d3.quantize(d3.schemeRdYlGn,data.lenght)
-  // const color = d3.scaleOrdinal()
-  //   .domain(data.map(element => genreAccessor(element)))
-  //   .range(palette.reverse());
+  const colorScale = d3.scaleOrdinal()
+    .domain(data.map(element => element.genre))
+    .range(palette);
 
   // Compute the position of each group on the pie:
   const pie = d3.pie()
@@ -52,7 +50,7 @@ function donutChart(selection, data, widthDonutChart, heightDonutChart, palette)
     const salesPerc = salesPercentage(data, sales)
     tooltip
       .html("Genre: " + genre + "<br>"
-        + "Sales: " + sales + " Mln $" 
+        + "Sales: " + sales + " Mln $"
         + "<br>" + salesPerc + "% of total sales")
       .style("font-family", "Quicksand, sans-serif")
       .style("font-size", radius * 0.08 + 'px')
@@ -60,9 +58,8 @@ function donutChart(selection, data, widthDonutChart, heightDonutChart, palette)
   }
 
   const mousemove = function (event, d) {
-    tooltip.style("transform", "translateY(-50%)")
-      .style("transform", "translateX(-50%)")
-      .style("left", ((widthDonutChart / 2)+25) + 'px')
+    tooltip
+      .style("left", ((widthDonutChart *0.55288)) + 'px')
       .style("top", (heightDonutChart / 2) + 'px')
   }
 
@@ -72,19 +69,15 @@ function donutChart(selection, data, widthDonutChart, heightDonutChart, palette)
   }
 
   let angleInterpolation = d3.interpolate(pie.startAngle()(), pie.endAngle()());
-
   let innerRadiusInterpolation = d3.interpolate(0, innerRadius);
   let outerRadiusInterpolation = d3.interpolate(0, outerRadius);
   // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
-  selection
-    .selectAll('path')
+  selection.selectAll('.donutslices')
     .data(slices)
     .join('path')
+    .classed('donutslices', true)
     .attr('d', arc)
-    .attr('fill', (d, i) => palette[i])
-    .attr("stroke", "#141E27")
-    .style("stroke-width", "2px")
-    .style("opacity", 0.7)
+    .attr('fill', (d) => colorScale(d.data.genre))
     .on("mouseover", mouseover)
     .on("mousemove", mousemove)
     // .on("mouseleave", mouseleave)
@@ -93,77 +86,92 @@ function donutChart(selection, data, widthDonutChart, heightDonutChart, palette)
     .attrTween("d", d => {
       let originalEnd = d.endAngle;
       return t => {
-          let currentAngle = angleInterpolation(t);
-          if (currentAngle < d.startAngle) {
-              return "";
-          }
-          d.endAngle = Math.min(currentAngle, originalEnd);
-          return arc(d);
+        let currentAngle = angleInterpolation(t);
+        if (currentAngle < d.startAngle) {
+          return "";
+        }
+        d.endAngle = Math.min(currentAngle, originalEnd);
+        return arc(d);
       };
-  })
+    })
+    .attr("stroke", "#141E27")
+    .style("stroke-width", "1.5 px")
 
   selection.transition()
-  .duration(500).tween("arcRadii", () => {
+    .duration(500).tween("arcRadii", () => {
       return t => arc
-          .innerRadius(innerRadiusInterpolation(t))
-          .outerRadius(outerRadiusInterpolation(t));
-  });
+        .innerRadius(innerRadiusInterpolation(t))
+        .outerRadius(outerRadiusInterpolation(t));
+    });
 
+  var lableFilter = 0.2;
+
+  function midAngle(d) {
+    return d.startAngle + (d.endAngle - d.startAngle) / 2;
+  }
+  selection.selectAll('polyline').remove()
   // Add the polylines between chart and labels:
-  lableFilter = 0.2
-  selection
-    .selectAll('allPolylines')
+  selection.selectAll('polyline')
     .data(slices)
     .join('polyline')
-    .attr("stroke", "black")
-    .style("fill", "none")
     .filter((d) => (d.endAngle - d.startAngle) > lableFilter)
     .transition()
-    .attr("stroke-width", 1)
-    .attr('points', function (d) {
-      const posA = arc.centroid(d) // line insertion in the slice
-      const posB = outerArc.centroid(d) // line break: we use the other arc generator that has been built only for that
-      const posC = outerArc.centroid(d); // Label position = almost the same as posB
-      const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2 // we need the angle to see if the X position will be at the extreme right or extreme left
-      posC[0] = radius * 0.95 * (midangle < Math.PI ? 1 : -1); // multiply by 1 or -1 to put it on the right or on the left
-      return [posA, posB, posC]
+    .duration(1500)
+    .attrTween("points", function (d) {
+      this._current = this._current || d;
+      var interpolate = d3.interpolate(this._current, d);
+      this._current = interpolate(0);
+      return function (t) {
+        var d2 = interpolate(t);
+        var pos = outerArc.centroid(d2);
+        pos[0] = radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
+        return [arc.centroid(d2), outerArc.centroid(d2), pos];
+      };
     })
+    .attr("stroke", "black")
+    .attr("stroke-width", 1)
+    .style("fill", "none");
 
   const fontSize = widthDonutChart * 0.015;
 
-  // Add the polylines between chart and labels:
-  selection
-    .selectAll('allLabels')
+  selection.selectAll('.labelsdonut').remove()
+  // Add the labels:
+  selection.selectAll('.labelsdonut')
     .data(slices)
     .join('text')
+    .classed('labelsdonut', true)
     .call(
       text => text.filter((d) => (d.endAngle - d.startAngle) > lableFilter)
-        .append('tspan')
-        .text(d => genreAccessor(d.data) + ' ')
+        .text(d => genreAccessor(d.data) + ' ' + salesAccessor(d.data) + ' Mln $')
         .style('font-size', fontSize)
     )
-    .call(
-      text => text.filter((d) => (d.endAngle - d.startAngle) > lableFilter)
-        .append('tspan')
-        .text(d => salesAccessor(d.data) + ' Mln $')
-        .style('font-weight', 'bold')
-        .style('font-size', fontSize)
-    )
-    .attr('transform', function (d) {
-      const pos = outerArc.centroid(d);
-      const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
-      pos[0] = radius * 0.99 * (midangle < Math.PI ? 1 : -1);
-      return `translate(${pos})`;
-    })
-    .style('text-anchor', function (d) {
-      const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
-      return (midangle < Math.PI ? 'start' : 'end')
-    })
+    .attr("dy", ".35em")
+    .transition().duration(1000)
+		.attrTween("transform", function(d) {
+			this._current = this._current || d;
+			var interpolate = d3.interpolate(this._current, d);
+			this._current = interpolate(0);
+			return function(t) {
+				var d2 = interpolate(t);
+				var pos = outerArc.centroid(d2);
+				pos[0] = radius * (midAngle(d2) < Math.PI ? 1 : -1);
+				return "translate("+ pos +")";
+			};
+		})
+		.styleTween("text-anchor", function(d){
+			this._current = this._current || d;
+			var interpolate = d3.interpolate(this._current, d);
+			this._current = interpolate(0);
+			return function(t) {
+				var d2 = interpolate(t);
+				return midAngle(d2) < Math.PI ? "start":"end";
+			};
+		});
 }
 
 function salesPercentage(data, genreSales) {
   const initialValue = 0;
   const sales = (accumulator, genre) => accumulator + genre.sales;
-  var totalSales = data.reduce(sales, 0);
+  var totalSales = data.reduce(sales, initialValue);
   return Math.round((genreSales * 100) / totalSales);
 }
