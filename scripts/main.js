@@ -134,6 +134,13 @@ async function scrollVis() {
             .style('color', '#fff')
             .style("padding", "10px")
 
+        //stacked line chart
+        var stackedLineChart = visGroup.append('g')
+            .attr('id', 'stackedline')
+            .attr("transform",
+                `translate(${marginLineChart.left},${marginLineChart.top})`)
+            .attr('opacity', 0);
+
         //line chart
         var lineChart = visGroup.append('g')
             .attr('id', 'linechart')
@@ -435,7 +442,7 @@ async function setupScrollSection(filename, scrollSection) {
         .attr('r', d => radiusScaler(qtAccessor(d)))
         .attr('cx', dimensions.width / 2)
         .attr('cy', (d, i) => bubblesDistance * ((i % dataset.length)))
-        .style('fill', (d, i) =>  genrePalette[genreList.length - 1 - i]);
+        .style('fill', (d, i) => genrePalette[genreList.length - 1 - i]);
 
     const labelsGruop = ctr.append('g');
     const fontSize = maxRadius * 0.165;
@@ -504,7 +511,7 @@ function salesRange(data, startYear, endYear) {
 
 function generateArrayOfYears() {
     var years = [];
-    var endYear = 2016;
+    var endYear = 2015;
     var startYear = 1980;
     while (startYear <= endYear) {
         years.push(startYear++);
@@ -551,14 +558,13 @@ function darwDonutChart(datasetDonut) {
             .min(d3.min(data))
             .max(d3.max(data))
             .width(widthSlider)
-            .height(height * 0.8)
+            .height(height * 0.9)
             .tickFormat(d3.format(''))
             .ticks(10)
             .step(1)
             .default([1980, 2016])
             .fill('#2196f3')
             .on('onchange', val => {
-                console.log(val)
                 updateDonutChart(val[0], val[1]);
             });
 
@@ -575,11 +581,90 @@ function darwDonutChart(datasetDonut) {
 
     function updateDonutChart(startYear, endYear) {
         var data = salesRange(datasetDonut, startYear, endYear)
-        console.log(data)
         donutChart(donutGroup, data, width - margin, height - margin, genrePalette)
     }
     updateDonutChart(1980, 2016);
 
+}
+
+function drawTrendSumup(datasetTrend) {
+    var width = parseInt(d3.select('#svgtrendsumup').style('width'));
+    var height = parseInt(d3.select('#svgtrendsumup').style('height'));
+    var margin = 100;
+    width = width - (margin * 2);
+    height = (width * 0.6) - margin * 2;
+    //setup svg area and tooltip for the initial donut chart
+    const trendSumup = d3.select('#svgtrendsumup')
+        .attr('height', height)
+
+    const trendGroup = trendSumup.append('g')
+        .attr('id', 'trendchart')
+        .attr("transform", `translate(${margin}, ${margin / 2})`);
+
+    const parseDate = d3.timeParse('%Y');
+    const xAccessor = d => parseDate(d.year)
+    const yAccessor = d => parseInt(d.sales)
+
+    const marginLeft = 50
+
+    const xScale = d3.scaleTime()
+        .domain([d3.min(datasetTrend, xAccessor), d3.max(datasetTrend, xAccessor)])
+        .range([0, width - marginLeft]);
+
+    const yScale = d3.scaleLinear()
+        .range([height-margin, 0])
+        .nice();
+
+    const stack = d3.stack()
+        .keys(genreList);
+
+    const stackedData = stack(datasetTrend);
+    yScale.domain([0, d3.max(stackedData[stackedData.length - 1], (d) => d[1])])
+
+
+    var xAxis = d3.axisBottom(xScale);
+    var yAxis = d3.axisLeft(yScale);
+
+    // Initialise lineChart X axis:
+    trendGroup.append("g")
+        .attr("id", "trendChartXAxis")
+        .attr("transform", `translate(${0}, ${height - margin})`);
+
+    //Aggiugo la label all'asse x
+    d3.select('#trendChartXAxis')
+        .append('text')
+        .text('Years')
+        .attr("text-anchor", "middle")
+        .style('font-size', height * 0.04)
+        .attr('x', width / 2)
+        .attr('y', marginBarChart.bottom + 5)
+        .attr('fill', 'black');
+
+    // Initialize trend Chart Y axis
+    trendGroup.append("g")
+        .attr("id", "trendChartYAxis")
+    //Aggiugo la label all'asse y
+    d3.select('#trendChartYAxis').append('text')
+        .attr('x', - (height / 2) + margin / 2)
+        .attr('y', - margin / 2)
+        .text('Videogames Sold (in millions $)')
+        .attr("text-anchor", "middle")
+        .style('font-size', height * 0.04)
+        .attr('fill', 'black').style('transform', 'rotate(270deg)');
+
+    // Create the line chart X axis:
+    trendGroup.select("#trendChartXAxis")
+        .transition()
+        .duration(500)
+        .call(xAxis);
+
+    // create the line chart Y axis
+    trendGroup.select("#trendChartYAxis")
+        .transition()
+        .duration(500)
+        .call(yAxis);
+
+    stackedLineChart(trendGroup, datasetTrend, width, height - margin, marginLeft, genrePalette)
 }
 
 
@@ -605,11 +690,13 @@ async function drawing() {
     const filenameBubble = '../data_cleaning/dataset/bubble_data.json';
     const filenameDonut = '../data_cleaning/dataset/genreSales_data.json';
     const filenameGenreSalesYearTrend = '../data_cleaning/dataset/salesTrend_data.json'
+    const filenameGenreTrend = '../data_cleaning/dataset/salesTrendStack_data.json'
     const datasetDonut = await d3.json(filenameGenreSalesYearTrend);
+    const datasetTrend = await d3.json(filenameGenreTrend);
     darwDonutChart(datasetDonut);
+    drawTrendSumup(datasetTrend);
     var scrollSection = d3.select('#sections');
     setupScrollSection(filenameBubble, scrollSection);
 }
 
 drawing()
-// window.addEventListener('resize', setSizes);

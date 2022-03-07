@@ -27,23 +27,24 @@ function lineChart(selection, data, widthLineChart, heightLineChart, palette) {
         return d3.axisLeft(yScale)
             .ticks(5)
     }
+    selection.selectAll('.grid').remove()
 
-    // // add the X gridlines
-    // selection.append("g")
-    //     .attr("class", "grid")
-    //     .attr("transform", "translate(0," + heightLineChart + ")")
-    //     .call(make_x_gridlines()
-    //         .tickSize(-heightLineChart)
-    //         .tickFormat("")
-    //     )
+    // add the X gridlines
+    selection.append("g")
+        .attr("class", "grid")
+        .attr("transform", "translate(0," + heightLineChart + ")")
+        .call(make_x_gridlines()
+            .tickSize(-heightLineChart)
+            .tickFormat("")
+        )
 
-    // // add the Y gridlines
-    // selection.append("g")
-    //     .attr("class", "grid")
-    //     .call(make_y_gridlines()
-    //         .tickSize(-widthLineChart)
-    //         .tickFormat("")
-    //     )
+    // add the Y gridlines
+    selection.append("g")
+        .attr("class", "grid")
+        .call(make_y_gridlines()
+            .tickSize(-widthLineChart)
+            .tickFormat("")
+        )
 
 
     // create tooltip element 

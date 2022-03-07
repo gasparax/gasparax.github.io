@@ -33,12 +33,14 @@ function donutChart(selection, data, widthDonutChart, heightDonutChart, palette)
     .outerRadius(radius * 0.9)
 
   //Title
-  selection.append('text')
-    .attr('id', 'titledonut')
-    .attr('y', -heightDonutChart / 2)
-    .attr("text-anchor", "middle")
-    .style("font-size", widthDonutChart * 0.02)
-    .text("Total videogames sales based on genre");
+  if (selection.select('#titledonut').empty()) {
+    selection.append('text')
+      .attr('id', 'titledonut')
+      .attr('y', -heightDonutChart / 2)
+      .attr("text-anchor", "middle")
+      .style("font-size", widthDonutChart * 0.02)
+      .text("Total videogames sales based on genre");
+  }
 
 
   var tooltip = d3.select('#donutTooltip');
@@ -59,7 +61,7 @@ function donutChart(selection, data, widthDonutChart, heightDonutChart, palette)
 
   const mousemove = function (event, d) {
     tooltip
-      .style("left", ((widthDonutChart *0.55288)) + 'px')
+      .style("left", ((widthDonutChart * 0.55288)) + 'px')
       .style("top", (heightDonutChart / 2) + 'px')
   }
 
@@ -147,26 +149,26 @@ function donutChart(selection, data, widthDonutChart, heightDonutChart, palette)
     )
     .attr("dy", ".35em")
     .transition().duration(1000)
-		.attrTween("transform", function(d) {
-			this._current = this._current || d;
-			var interpolate = d3.interpolate(this._current, d);
-			this._current = interpolate(0);
-			return function(t) {
-				var d2 = interpolate(t);
-				var pos = outerArc.centroid(d2);
-				pos[0] = radius * (midAngle(d2) < Math.PI ? 1 : -1);
-				return "translate("+ pos +")";
-			};
-		})
-		.styleTween("text-anchor", function(d){
-			this._current = this._current || d;
-			var interpolate = d3.interpolate(this._current, d);
-			this._current = interpolate(0);
-			return function(t) {
-				var d2 = interpolate(t);
-				return midAngle(d2) < Math.PI ? "start":"end";
-			};
-		});
+    .attrTween("transform", function (d) {
+      this._current = this._current || d;
+      var interpolate = d3.interpolate(this._current, d);
+      this._current = interpolate(0);
+      return function (t) {
+        var d2 = interpolate(t);
+        var pos = outerArc.centroid(d2);
+        pos[0] = radius * (midAngle(d2) < Math.PI ? 1 : -1);
+        return "translate(" + pos + ")";
+      };
+    })
+    .styleTween("text-anchor", function (d) {
+      this._current = this._current || d;
+      var interpolate = d3.interpolate(this._current, d);
+      this._current = interpolate(0);
+      return function (t) {
+        var d2 = interpolate(t);
+        return midAngle(d2) < Math.PI ? "start" : "end";
+      };
+    });
 }
 
 function salesPercentage(data, genreSales) {
